@@ -661,25 +661,26 @@
     height: auto;
     margin: 150px 0;
     font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
 }
 .tarjetas-conocenos__card1 {
-    max-width: 1200px;
+    width: 1200px;
     height: 500px;
     background-color: #f8f8f8;
     border-radius: 8px;
     box-shadow: 0 0 12px #d7d7d7;
     display: flex;
     margin-bottom: 100px;
-    margin-left: 50px;
 }
 .tarjetas-conocenos__card2 {
-    max-width: 1200px;
+    width: 1200px;
     height: 500px;
     background-color: #f8f8f8;
     border-radius: 8px;
     box-shadow: 0 0 12px #d7d7d7;
-    display: flex;
-    margin-left: 650px;
+    display: flex; 
 }
 .tarjetas-conocenos__card__header img {
     border-radius: 8px 0 0 8px;
@@ -709,8 +710,6 @@
     font-size: 23px;
     line-height: 29px;
 }
-
-
 
 @media (max-width:1900px){
     .menu {
@@ -964,6 +963,41 @@
     .registro__pag-textos {
         margin-right: 0;
     }
+    /*---------------------------------*/
+    /*---------------------------------*/
+    /*---------4.Conocenos-----------*/  
+    .portada-conocenos h1 {
+        height: 350px;
+    }
+    .tarjetas-conocenos__card1 {
+        width: auto;
+        height: auto;
+    }
+    .tarjetas-conocenos__card2 {
+        width: auto;
+        height: auto;
+    }
+    .tarjetas-conocenos__card__header img {
+        height: 450px;
+        width: 500px;
+    }
+    .tarjeta__conocenos__card__footer {
+        width: 524px;
+        justify-content: space-evenly;
+        padding: 0;
+    }
+    .tarjeta__conocenos__card__footer h3 {
+        font-size: 36px;
+    }
+    .tarjeta__conocenos__card__footer p {
+        width: 510px;
+        padding-top: 0;
+        padding-left:10px ;
+        margin: 0;
+        font-size: 18px;
+        line-height: 26px;
+        text-align: center;
+    }
 }
 @media (max-width:768px){
     .menu {
@@ -1159,7 +1193,36 @@
     .registro__pag-textos {
         margin-right: 0;
         margin-bottom: 25px;
-    }    
+    } 
+    /*---------------------------------*/
+    /*---------------------------------*/
+    /*---------4.Conocenos-----------*/  
+    .portada-conocenos h1 {
+        height: 350px;
+        font-size: 75px;
+    }
+    .tarjetas-conocenos__card1 {
+        flex-direction: column;
+    }
+    .tarjetas-conocenos__card2 {
+        flex-direction: column;
+    }
+    .tarjetas-conocenos__card__header img {
+        height: 450px;
+        width: 530px;
+        border-radius:  8px 8px 0 0;
+    }
+    .card--img--modificadora img {
+        border-radius:  0 0 8px 8px;
+    }
+    .tarjeta__conocenos__card__footer h3 {
+        font-size: 30px;
+    }
+    .tarjeta__conocenos__card__footer p {
+        width: 524px;
+        padding: 10px;
+        font-size: 16px;
+    }   
 }
 @media (max-width:575px){
     .menu {
@@ -1340,5 +1403,27 @@
     }
     .registro__pag-textos h3 {
         font-size: 25px;
+    }
+    /*---------------------------------*/
+    /*---------------------------------*/
+    /*---------4.Conocenos-----------*/  
+    .portada-conocenos h1 {
+        height: 250px;
+        font-size: 60px;
+    }
+    .tarjetas-conocenos__card__header img {
+        height: 350px;
+        width: 420px;
+    }
+    .tarjeta__conocenos__card__footer {
+        width: auto;
+    }
+    .tarjeta__conocenos__card__footer h3 {
+        font-size: 21px;
+    }
+    .tarjeta__conocenos__card__footer p {
+        width: 420px;
+        padding: 10px;
+        font-size: 16px;
     }
 }
