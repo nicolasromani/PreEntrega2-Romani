@@ -242,15 +242,13 @@
   font-family: "Montserrat", sans-serif;
   margin-top: 100px;
 }
-
-.ubicacion {
+.bloqueMapaLogin .ubicacion {
   display: flex;
   justify-content: center;
   align-items: center;
   height: 400px;
 }
-
-.ubicacion__text {
+.bloqueMapaLogin .ubicacion .ubicacion__text {
   width: 450px;
   line-height: 25px;
   margin-right: 25px;
@@ -258,33 +256,28 @@
   flex-direction: column;
   justify-content: center;
 }
-
-.ubicacion iframe {
+.bloqueMapaLogin .ubicacion iframe {
   border-radius: 10px;
   height: 350px;
 }
-
-.registro {
+.bloqueMapaLogin .registro {
   height: 250px;
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: space-around;
 }
-
-.registro__textos {
+.bloqueMapaLogin .registro .registro__textos {
   text-align: center;
 }
-
-.registro__inputs input {
+.bloqueMapaLogin .registro .registro__inputs input {
   width: 250px;
   height: 45px;
   border-radius: 50px;
   padding: 0 15px;
   margin-right: 5px;
 }
-
-.registro__boton {
+.bloqueMapaLogin .registro .registro__inputs .registro__boton {
   background-color: rgb(228, 132, 6);
   height: 45px;
   width: 140px;
@@ -301,12 +294,10 @@
   overflow: hidden;
   border: solid 3px rgb(228, 132, 6);
 }
-
-.registro__boton span {
+.bloqueMapaLogin .registro .registro__inputs .registro__boton span {
   z-index: 2;
 }
-
-.registro__boton::after {
+.bloqueMapaLogin .registro .registro__inputs .registro__boton::after {
   content: "";
   width: 1px;
   height: 1px;
@@ -318,25 +309,21 @@
   transition: 0.5s ease-in-out all;
   border-radius: 100px;
 }
-
-.registro__boton:hover::after {
+.bloqueMapaLogin .registro .registro__inputs .registro__boton:hover::after {
   transform: scale(200);
   background-color: black;
 }
-
-.registro__redes {
+.bloqueMapaLogin .registro .registro__redes {
   display: flex;
   flex-direction: column;
   align-items: center;
 }
-
-.registro__links {
+.bloqueMapaLogin .registro .registro__redes .registro__links {
   margin-top: 10px;
   font-size: 30px;
   word-spacing: 10px;
 }
-
-.registro__links a {
+.bloqueMapaLogin .registro .registro__redes .registro__links a {
   color: white;
 }
 
@@ -351,30 +338,25 @@
   align-items: center;
   font-family: "Montserrat", sans-serif;
 }
-
-.foot__img {
+.foot .foot__img {
   height: 150px;
 }
-
-.foot__img img {
+.foot .foot__img img {
   width: 160px;
   height: 100px;
 }
-
-.foot__contacto {
+.foot .foot__contacto {
   display: flex;
   flex-direction: column;
   height: 130px;
   align-items: center;
   gap: 10px;
 }
-
-.foot__contacto span {
+.foot .foot__contacto span {
   font-size: 14px;
   font-weight: 900;
 }
-
-.foot__boton {
+.foot .foot__contacto .foot__boton {
   background-color: rgb(228, 132, 6);
   height: 50px;
   width: 170px;
@@ -389,12 +371,10 @@
   overflow: hidden;
   border: solid 3px rgb(228, 132, 6);
 }
-
-.foot__boton span {
+.foot .foot__contacto .foot__boton span {
   z-index: 2;
 }
-
-.foot__boton::after {
+.foot .foot__contacto .foot__boton::after {
   content: "";
   width: 1px;
   height: 1px;
@@ -406,38 +386,32 @@
   transition: 0.5s ease-in-out all;
   border-radius: 100px;
 }
-
-.foot__boton:hover::after {
+.foot .foot__contacto .foot__boton:hover::after {
   transform: scale(200);
   background-color: black;
+}
+.foot .foot__grid {
+  width: 1050px;
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+}
+.foot .foot__grid .foot__bloque1 {
+  grid-column: 1/2;
+}
+.foot .foot__grid .foot__bloque2 {
+  grid-column: 2/3;
+}
+.foot .foot__grid .foot__bloque3 {
+  grid-column: 3/4;
+}
+.foot .foot__grid .foot__bloque4 {
+  grid-column: 4/5;
 }
 
 .foot--bloques {
   display: flex;
   flex-direction: column;
   line-height: 25px;
-}
-
-.foot__grid {
-  width: 1050px;
-  display: grid;
-  grid-template-columns: repeat(4, 1fr);
-}
-
-.foot__bloque1 {
-  grid-column: 1/2;
-}
-
-.foot__bloque2 {
-  grid-column: 2/3;
-}
-
-.foot__bloque3 {
-  grid-column: 3/4;
-}
-
-.foot__bloque4 {
-  grid-column: 4/5;
 }
 
 .foot--subtitulo {
