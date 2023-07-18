@@ -1,0 +1,1428 @@
+@import url("https://fonts.googleapis.com/css?family=Playfair+Display&display=swap");
+@import url('https://fonts.googleapis.com/css2?family=Libre+Baskerville&family=Montserrat&display=swap');
+
+* {
+    border:0;
+	box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+.menu {
+    width: 100%;
+    height: 750px;
+    position: relative;
+    overflow: hidden;
+    font-family: 'Playfair Display', serif;
+    .menu__links {
+        height: 74px;
+        background-color: black;
+        position: fixed;
+        width: 100%;
+        z-index: 2;
+        display: flex;
+        align-items:center;
+        justify-content: space-between;
+        a img {
+            width: 100px;
+            height: 60px;
+        }
+        ul {
+            display: flex;
+            list-style: none;
+            margin: 0;
+            padding: 0;
+            li a {
+                color: white;
+                display: block;
+                text-decoration:none;
+                font-size: 1.3rem;
+                padding: 5px 20px;
+            }
+        }
+    }
+    .video-portada {
+        margin-top: 74px;
+        video {
+            width: 100%;
+        }
+        h1 {
+            position: absolute;
+            color:white;
+            font-size: 4em;
+            text-align: center;
+            top: 250px;
+            left: 50px;
+            margin: 0;
+            font-weight: 400;
+            text-shadow: 3px 5px 2px #474747, 32px 20px 9px rgba(255,255,255,0.23);
+            color: #FFFFFF;
+        }
+    }
+}
+.menu__Hamb {
+    color: white;
+    font-size: 35px;
+    display: none;
+}
+
+/*--------------------------------------------*/
+.booker {
+    background-color: darkgray;
+    width: 65%;
+    height: 80px;
+    border-radius: 50px;
+    border: solid black 2px;
+    position: relative;
+    bottom: 40px;
+    left: 310px; 
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    font-family: 'Montserrat', sans-serif;
+    .booker__tipologia  {
+        font-size: 20px;
+        font-weight: bolder;
+        
+    }
+}
+
+.booker__tipologia input, .booker__tipologia select {
+    font-size: 15px;
+    height: 35px;
+    border: solid 1px black;
+}
+.booker__boton input {
+    width: 150px;
+    height: 45px;
+    border-radius: 50px;
+    font-size: 25px;
+    border: solid 2px black;
+    cursor: pointer;
+}
+/*--------------------------------------------*/
+.tarjetas {
+    margin: 3rem 0;
+    display: flex;
+    flex-flow: wrap;
+    justify-content: space-around;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+.tarjeta {
+    max-width: 750px;
+    height: 360px;
+    background-color: #f8f8f8;
+    border-radius: 8px;
+    margin: 1rem;
+    box-shadow: 0 0 12px #d7d7d7;
+    display: flex;
+}
+.tarjeta__header img {
+    border-radius: 8px 0 0 8px;
+    height: 360px;
+    width: 360px;
+}
+.tarjeta__footer{
+    display: flex;
+    flex-direction: column;
+    align-items: end;
+    justify-content: space-between;
+    padding: 0 1rem;
+    width: 390px; 
+}
+.tarjeta__textos {
+    padding: 10px 0 0 0;
+    margin: 0;
+}
+.tarjeta__textos h3 {
+    font-size: 26px;
+    margin: 0;
+}
+.tarjeta__textos p {
+    padding-top: 10px;
+    margin: 0;
+    font-size: 16px;
+    line-height: 23px;
+}
+.tarjeta__link {
+    margin: 1rem 0;
+}
+.tarjeta__link span {
+    background-color: rgb(228, 132, 6);
+    color:black;
+    font-weight: 500;
+    padding: .2rem .5rem;
+    border-radius: 4px;
+    margin-bottom: 4px;
+}
+/*--------------------------------------------*/
+.grilla {
+    width: 100%;
+    height: auto;
+    margin-top: 40px;
+    display: flex;
+    justify-content: center;
+    align-items: center; 
+    font-family: 'Times New Roman', Times, serif;
+}
+.contenedorGrid {
+    display: grid;
+    grid-template-columns: repeat(3,350px);
+    grid-template-rows: 350px;
+    gap: 10px;  
+}
+.contenedorGrid--celda {
+    position: relative;
+    overflow: hidden;
+    border-radius: 15px;
+}
+.contenedorGrid--celda img {
+    width: 350px;
+    height: 350px;
+    transition: transform 0.3s ease;
+}
+.contenedorGrid--celda:hover img {
+    transform: scale(1.2);
+}
+.contenedorGrid--celda h3 {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    margin: 0;
+    font-family: 'Playfair Display', serif;
+    font-size: 31px;
+    font-weight: 600;
+    color: rgb(236, 224, 224);
+    background-color: rgba(218, 99, 30, 0.685);
+    border-radius: 5px;
+    width: 250px;
+    height: 40px;
+    text-align:center;
+}
+.contenedorGrid__imagen1 {
+    grid-column: 1/2 ;
+    grid-row: 1/2;
+}
+.contenedorGrid__imagen2 {
+    grid-column: 2/3;
+    grid-row: 1/2;
+}
+.contenedorGrid__imagen3 {
+    grid-column: 3/4;
+    grid-row: 1/2;
+}
+.contenedorGrid__imagen4 {
+    grid-column: 1/2;
+    grid-row: 2/3;
+}
+.contenedorGrid__imagen5 {
+    grid-column: 2/3;
+    grid-row: 2/3;
+}
+.contenedorGrid__imagen6 {
+    grid-column: 3/4;
+    grid-row: 2/3;
+}
+/*--------------------------------------------*/
+.bloqueMapaLogin {
+    width: 100%;
+    background-color: black;
+    color: white;
+    height: auto;
+    font-family: 'Montserrat', sans-serif;
+    margin-top: 100px;
+}
+.ubicacion {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 400px;
+}
+.ubicacion__text {
+    width: 450px;
+    line-height: 25px;
+    margin-right: 25px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+.ubicacion iframe {
+    border-radius: 10px;
+    height: 350px;
+}
+.registro {
+    height: 250px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
+}
+.registro__textos {
+    text-align: center;
+}
+.registro__inputs input {
+    width: 250px;
+    height: 45px;
+    border-radius: 50px;
+    padding: 0 15px;
+    margin-right: 5px;
+}
+.registro__boton {
+    background-color: rgb(228, 132, 6);
+    height: 45px;
+    width: 140px;
+    border-radius: 50px;
+    color: white;
+    font-size: 14px;
+    font-weight:900 ;
+    
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    transition: .3s ease all;
+    cursor: pointer;
+    position: relative;
+    overflow: hidden;
+    border: solid 3px rgb(228, 132, 6);
+}
+.registro__boton span {
+    z-index: 2;
+}
+.registro__boton::after {
+    content: "";
+    width: 1px;
+    height: 1px;
+    background-color:none;
+    position: absolute;
+    z-index: 1;
+    top: 50%;
+    left: 50%;
+    transition: .5s ease-in-out all;
+    border-radius: 100px;  
+}
+.registro__boton:hover::after {
+    transform: scale(200);
+    background-color: black;
+}
+.registro__redes {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.registro__links {
+    margin-top: 10px;
+    font-size: 30px;
+    word-spacing: 10px;
+}
+.registro__links a {
+    color: white;
+}
+/*--------------------------------------------*/
+.foot {
+    margin-top: 50px;
+    width: 100%;
+    height: 250px;
+    background-color: rgb(192, 192, 192);
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    font-family: 'Montserrat', sans-serif;
+}
+.foot__img {
+    height: 150px;   
+}
+.foot__img img {
+    width: 160px;
+    height: 100px;
+}
+.foot__contacto{
+    display: flex;
+    flex-direction: column;
+    height: 130px;
+    align-items: center;
+    gap: 10px;
+}
+.foot__contacto span {
+    font-size: 14px;
+    font-weight: 900;
+}
+.foot__boton {
+    background-color: rgb(228, 132, 6);
+    height: 50px;
+    width: 170px;
+    border-radius: 50px;
+    color: white;
+    
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    transition: .3s ease all;
+    cursor: pointer;
+    position: relative;
+    overflow: hidden;
+    border: solid 3px rgb(228, 132, 6);
+}
+.foot__boton span {
+    z-index: 2;
+}
+.foot__boton::after {
+    content: "";
+    width: 1px;
+    height: 1px;
+    background-color:none;
+    position: absolute;
+    z-index: 1;
+    top: 50%;
+    left: 50%;
+    transition: .5s ease-in-out all;
+    border-radius: 100px;  
+}
+.foot__boton:hover::after {
+    transform: scale(200);
+    background-color: black;
+}
+.foot--bloques {
+    display: flex;
+    flex-direction: column;
+    line-height: 25px;
+}
+.foot__grid {
+    width: 1050px;
+    display: grid;
+    grid-template-columns: repeat(4,1fr);
+}
+.foot__bloque1 {
+    grid-column: 1/2;
+}
+.foot__bloque2 {
+    grid-column: 2/3;
+}
+.foot__bloque3 {
+    grid-column: 3/4;
+}
+.foot__bloque4 {
+    grid-column: 4/5;
+}
+.foot--subtitulo {
+    font-weight: bold;
+    font-size: 18px;
+}
+/*--------------------------------------------*/
+/*--------------------------------------------*/
+/*------1.hotel--------*/
+.menu--modificador {
+    height: 624px;
+}
+.d-block {
+    margin-top: 74px;
+    max-height:550px;
+    object-fit: cover;
+}
+.carousel-caption {
+    font-size: 35px;
+}
+.registro--modificador {
+    margin-top: 50px;
+    background-color: black;
+    color: white;
+    font-family: 'Montserrat', sans-serif;
+}
+.tarjetas_hotel {
+    background-color: #d8d6d6;
+    height: auto;
+    width: 100%;
+    margin-top: 40px;
+}
+.tarjetas_hotel__avisos {
+    width: 100%;
+    height: auto;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    flex-wrap: wrap;
+}
+.tarjetas_hotel__avisos img {
+    border-radius: 20px;
+    width: 700px;
+    height: 700px;
+    -webkit-box-shadow: 2px 5px 16px 0px #414346, 38px 7px 12px -3px rgba(0,0,0,0); 
+    box-shadow: 2px 5px 16px 0px #303233, 38px 7px 12px -3px rgba(0,0,0,0);
+    background: #1C6EA4;
+}
+.tarjetas_hotel__textos {
+    width: 850px;
+    padding: 15px;
+    height: 850px;
+    font-size: 25px;
+    line-height: 40px;
+    text-align: center;
+    font-family: 'Montserrat', sans-serif;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+.tarjetas_hotel__textos h3 {
+    margin-bottom: 15px;
+    font-size: 45px;
+    font-family: 'Playfair Display', serif;
+    font-weight: 800;
+    text-decoration: underline;
+}
+/*--------------------------------------------*/
+/*--------------------------------------------*/
+/*------2.Exp Cent--------*/
+.exp-cent {
+    margin-top: 74px;
+    height: 550px;
+    background-image: url(../multimedia/img/carrusel1.jpeg);
+    background-position-y: -150px;
+}
+.exp-cent h1 {
+    color:white;
+    width: 100%;
+    height: 550px;
+    font-size: 6em;
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    font-weight: 900;
+    text-shadow: 3px 5px 2px #474747, 32px 20px 9px rgba(255,255,255,0.23);
+    color: #FFFFFF;
+}
+.tarjetas-exp-cent {
+    width: 1400px;
+    height: auto;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    margin: auto;
+}
+.tarjeta-exp-cent {
+    width:410px;
+    height: auto;
+    display: flex;
+    flex-direction: column;
+    border-radius: 8px;
+    
+    overflow: hidden;
+    box-shadow: 0 0 12px #d7d7d7;
+    background-color: #f8f8f8;
+    font-family: 'Gill Sans', Calibri, sans-serif;
+    color: rgb(43, 41, 41);
+    margin: 25px;
+
+    transition: transform 0.3s ease;
+}
+.tarjeta-exp-cent:hover {
+    transform: scale(1.1);
+}
+.tarjeta-exp-cent__header img {
+    width: 410px;
+    height: 430px;
+    object-fit: cover;
+}
+.tarjeta-exp-cent__footer {
+    font-size: 20px;
+    padding: 10px;
+    text-align: center;
+}
+.tarjeta-exp-cent__footer h3 {
+    font-size: 23px;
+    text-align: center;
+    margin-bottom: 5px;
+}
+
+
+/*--------------------------------------------*/
+/*--------------------------------------------*/
+/*------3.registro--------*/
+.portada-registro {
+    margin-top: 74px;
+    height: 550px;
+    background-image: url(../multimedia/img/carrusel1.jpeg);
+    background-attachment: fixed;
+    background-position-y: -150px;
+}
+.portada-registro h1 {
+    color:white;
+    width: 100%;
+    height: 550px;
+    font-size: 6em;
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    font-weight: 900;
+    text-shadow: 3px 5px 2px #474747, 32px 20px 9px rgba(255,255,255,0.23);
+    color: #FFFFFF;
+}
+.imagen-fondo--body {
+    background-image: url(../multimedia/img/probarfavi.png);  
+}
+.registro-bloque-Pr {
+    display: flex;
+    width: 100%;
+    justify-content: center;
+    margin: 150px 0;
+}
+.registro__pag-textos {
+    background-color: #e4e3e3e0;
+    padding: 20px;
+    width: 570px;
+    border-radius: 4px;
+    margin-right: 150px;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 19px;
+    line-height: 30px;
+    color: black;
+    font-weight: bold;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    text-align: center;
+}
+.registro__pag-textos h3 {
+    font-family: 'Playfair Display', serif;
+    font-size: 40px;
+    margin: 20px 0;
+    color:  rgb(228, 132, 6);
+    font-weight: bold;
+}
+.formulario {
+    width: 400px;
+    background-color: #24303c;
+    padding: 30px;
+    border-radius: 4px;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    color: white;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    box-shadow: 7px 13px 37px #7a7474;
+}
+.formulario h4 {
+    font-size: 22px;
+    margin-bottom: 20px;
+    text-align: center;
+}
+.formulario__input {
+    width: 100%;
+    background-color: #24303c;
+    padding: 10px;
+    border-radius: 4px;
+    margin-bottom: 16px;
+    border: 1px solid rgb(228, 132, 6);
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-size: 18px;
+}
+.formulario__term-cond {
+    display: inline-flex;
+    justify-content: space-evenly;
+    align-items: center;
+    margin-bottom: 16px;
+    font-size: 18px;
+}
+.formulario__boton {
+    width: 100%;
+    background-color:  rgb(228, 132, 6);
+    border: none;
+    padding: 12px;
+    color: white;
+    font-size: 16px;
+    font-weight: bold;
+    cursor: pointer;
+    border-radius: 4px;
+}
+
+/*--------------------------------------------*/
+/*--------------------------------------------*/
+/*------4.Conocenos--------*/
+.portada-conocenos {
+    margin-top: 74px;
+    height: 550px;
+    background-image: url(../multimedia/img/carrusel1.jpeg);
+    background-position-y: -200px;  
+}
+.portada-conocenos h1 {
+    color:white;
+    width: 100%;
+    height: 550px;
+    font-size: 6em;
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    font-weight: 900;
+    text-shadow: 3px 5px 2px #474747, 32px 20px 9px rgba(255,255,255,0.23);
+    color: #FFFFFF;
+}
+.tarjetas-conocenos {
+    width: 100%;
+    height: auto;
+    margin: 150px 0;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.tarjetas-conocenos__card1 {
+    width: 1200px;
+    height: 500px;
+    background-color: #f8f8f8;
+    border-radius: 8px;
+    box-shadow: 0 0 12px #d7d7d7;
+    display: flex;
+    margin-bottom: 100px;
+}
+.tarjetas-conocenos__card2 {
+    width: 1200px;
+    height: 500px;
+    background-color: #f8f8f8;
+    border-radius: 8px;
+    box-shadow: 0 0 12px #d7d7d7;
+    display: flex; 
+}
+.tarjetas-conocenos__card__header img {
+    border-radius: 8px 0 0 8px;
+    height: 500px;
+    width: 550px;
+}
+.card--img--modificadora img {
+    border-radius: 0 8px 8px 0;
+}
+
+.tarjeta__conocenos__card__footer {
+    width: auto;
+    display: flex;
+    flex-direction: column;
+    padding: 10px 20px;
+    margin: 0;
+    justify-content: space-around;
+}
+.tarjeta__conocenos__card__footer h3 {
+    font-size: 40px;
+    margin: 0;
+    text-align: center;
+}
+.tarjeta__conocenos__card__footer p {
+    padding-top: 10px;
+    margin: 0;
+    font-size: 23px;
+    line-height: 29px;
+}
+
+@media (max-width:1900px){
+    .menu {
+        height: 650px;
+    }
+    .video-portada h1 {
+        left: 8%;
+        font-size: 3.5em;
+    }
+    .booker {
+        bottom: 40px;
+        left: 300px;
+    }
+    .booker__tipologia  {
+        font-size: 20px;
+    }
+    .booker__tipologia input, .booker__tipologia select {
+        font-size: 15px;
+        height: 25px;
+    }
+    .booker__boton input {
+        width: 130px;
+        height: 40px;
+        font-size: 22px;
+    }  
+}
+@media (max-width:1440px){
+    .menu {
+        height: 580px;
+    }
+    .video-portada h1 {
+        left: 1%;
+    }
+    .booker {
+        left: 230px; 
+        height: 55px;
+        bottom: 30px;
+    }
+    .booker__tipologia  {
+        font-size: 15px;
+    }
+    .booker__tipologia input, .booker__tipologia select {
+        font-size: 13px;
+        height: 23px;
+    }
+    .booker__boton input {
+        width: 100px;
+        height: 35px;
+        font-size: 20px;
+    }
+    .foot {
+        justify-content: space-between;
+    }
+    /*---------------------------------*/
+    /*---------------------------------*/
+    /*---------1.Hotel-----------*/
+    .tarjetas_hotel__avisos img {
+        width: 600px;
+        height: 600px;
+    }
+    .tarjetas_hotel__textos {
+        width: 650px;
+        height: 650px;
+        font-size: 20px;
+        line-height: 35px;
+    }
+    .tarjetas_hotel__textos h3 {
+        font-size: 35px;
+    }
+    /*---------------------------------*/
+    /*---------------------------------*/
+    /*---------2.Exp Cent-----------*/
+    .tarjetas-exp-cent {
+        width: 100%;
+    }
+}
+@media (max-width:1200px){
+    .menu {
+        height: 500px;
+    }
+    .video-portada h1 {
+        font-size: 3em;
+        top: 190px;
+        left: 5px;
+    }
+    .booker {
+        left: 180px; 
+        width: 70%;
+        bottom: 30px;
+    }
+    .contenedorGrid {
+        grid-template-columns: repeat(2,350px);
+        grid-template-rows: 350px;  
+    }
+    .contenedorGrid__imagen1 {
+        grid-column: 1/2 ;
+        grid-row: 1/2;
+    }
+    .contenedorGrid__imagen2 {
+        grid-column: 2/3;
+        grid-row: 1/2;
+    }
+    .contenedorGrid__imagen3 {
+        grid-column: 1/2;
+        grid-row: 2/3;
+    }
+    .contenedorGrid__imagen4 {
+        grid-column: 2/3;
+        grid-row: 2/3;
+    }
+    .contenedorGrid__imagen5 {
+        grid-column: 1/2;
+        grid-row: 3/4;
+    }
+    .contenedorGrid__imagen6 {
+        grid-column: 2/3;
+        grid-row: 3/4;
+    }
+    .foot {
+        justify-content: space-evenly;
+    }   
+    .foot__grid {
+        width: 750px;
+    } 
+    /*---------------------------------*/
+    /*---------------------------------*/
+    /*---------1.Hotel-----------*/
+    .carousel-caption {
+        font-size: 20px;
+        bottom: 100px;
+    }
+    .carousel-control-prev {
+        bottom: 90px;
+    }
+    .carousel-control-next {
+        bottom: 90px;
+    }
+    .tarjetas_hotel__avisos img {
+        width: 500px;
+        height: 500px;
+    }
+    .tarjetas_hotel__textos {
+        width: 550px;
+        height: 550px;
+        font-size: 18px;
+        line-height: 30px;
+    }
+    .tarjetas_hotel__textos h3 {
+        font-size: 28px;
+    }  
+}
+@media (max-width:1024px){
+    .menu {
+        height: 400px;
+    }
+    .menu__links ul li a {
+        font-size: 1rem;
+    }
+    .video-portada h1 {
+        font-size: 2.5em;
+        top: 150px;
+        left: 0;
+    }
+    .booker {
+        left: 90px; 
+        width: 80%;
+        height: 55px;
+    }
+    .booker__tipologia  {
+        font-size: 13px;
+    }
+    .booker__tipologia input, .booker__tipologia select {
+        font-size: 12px;
+        height: 20px;
+    }
+    .booker__boton input {
+        width: 80px;
+        height: 30px;
+        font-size: 16px;
+    }
+    .ubicacion {
+        justify-content: space-around;
+    }
+    .ubicacion__text {
+        font-size: 18px;
+        margin: 0;
+    }
+    .ubicacion__text h3 {
+        font-size: 20px;
+    }
+    .ubicacion iframe {
+        height: 300px;
+        width: 450px;
+    }
+    .foot {
+        justify-content: space-between;
+    }   
+    .foot__grid {
+        width: 650px;
+    }
+    .foot--bloques {
+        font-size: 14px;
+        line-height: 25px;
+    } 
+    .foot--subtitulo {
+        font-size: 16px;
+    }
+    /*---------------------------------*/
+    /*---------------------------------*/
+    /*---------1.Hotel-----------*/
+    .menu--modificador {
+        height: 450px;
+    }
+    .carousel-caption {
+        font-size: 17px;
+        bottom: 160px;
+    }
+    .tarjetas_hotel__avisos img {
+        width: 450px;
+        height: 450px;
+    }
+    .tarjetas_hotel__textos {
+        width: 500px;
+        height: 500px;
+        font-size: 17px;
+        line-height: 28px;
+    }
+    .tarjetas_hotel__textos h3 {
+        font-size: 25px;
+    }  
+    /*---------------------------------*/
+    /*---------------------------------*/
+    /*---------2.Exp Cent-----------*/
+    .exp-cent h1 {
+        height: 300px;
+        font-size: 4em;
+    }
+    /*---------------------------------*/
+    /*---------------------------------*/
+    /*---------3.Registro-----------*/  
+    .portada-registro h1 { 
+        font-size: 4em;
+    }
+    .portada-registro {
+        background-position-y: -200px;
+    }
+    .registro-bloque-Pr {
+        width: 100%;
+        justify-content: space-around;
+    }
+    .registro__pag-textos {
+        margin-right: 0;
+    }
+    /*---------------------------------*/
+    /*---------------------------------*/
+    /*---------4.Conocenos-----------*/  
+    .portada-conocenos h1 {
+        height: 350px;
+    }
+    .tarjetas-conocenos__card1 {
+        width: auto;
+        height: auto;
+    }
+    .tarjetas-conocenos__card2 {
+        width: auto;
+        height: auto;
+    }
+    .tarjetas-conocenos__card__header img {
+        height: 450px;
+        width: 500px;
+    }
+    .tarjeta__conocenos__card__footer {
+        width: 524px;
+        justify-content: space-evenly;
+        padding: 0;
+    }
+    .tarjeta__conocenos__card__footer h3 {
+        font-size: 36px;
+    }
+    .tarjeta__conocenos__card__footer p {
+        width: 510px;
+        padding-top: 0;
+        padding-left:10px ;
+        margin: 0;
+        font-size: 18px;
+        line-height: 26px;
+        text-align: center;
+    }
+}
+@media (max-width:768px){
+    .menu {
+        height: 320px;
+    }
+    .menu__links .menu__Hamb {
+        display: block;
+        order: -1;
+        margin: 15px;
+    }
+    .menu__links .menu__Hamb:hover + ul {
+        left: 0px;
+    }
+    .menu__links ul:hover {
+        left: 0px;
+    }
+    .menu__links ul {
+        position: fixed;
+        top: 0;
+        left: -55vw;
+        background-color: white; 
+        flex-direction: column;
+        align-items: start;
+        padding: 10px;
+        width: 55vw;
+        height: 100vw;
+        transition: 0.5s;
+        border: solid black 1px;   
+    }
+    .menu__links ul li a {
+        color: black;
+    }
+    .video-portada h1 {
+        font-size: 2em;
+    }
+    .booker {
+        left: 60px; 
+        height: 37px;
+        bottom: 18px;
+    }
+    .booker__tipologia  {
+        font-size: 10px;
+        text-align: center;
+    }
+    .booker__tipologia input, .booker__tipologia select {
+        font-size: 9px;
+        height: 14px;
+    }
+    .booker__boton input {
+        width: 70px;
+        height: 25px;
+        font-size: 12px;
+    }
+    .tarjeta {
+        max-width: 650px;
+        height: 355px;
+    }
+    .tarjeta__footer{
+        width: 290px;
+        font-size: 15px;
+    }
+    .tarjeta__textos h3 {
+        font-size: 19px;
+    }
+    .tarjeta__textos p {
+        font-size: 15px;
+    }
+    .contenedorGrid--celda h3 {
+        font-size: 30px;
+        width: 220px;
+        height: 40px;
+    }
+    .contenedorGrid {
+        grid-template-columns: repeat(2,250px);
+        grid-template-rows: repeat(3,250px);  
+    }
+    .contenedorGrid__imagen1 {
+        grid-column: 1/2 ;
+        grid-row: 1/2;
+    }
+    .contenedorGrid__imagen2 {
+        grid-column: 2/3;
+        grid-row: 1/2;
+    }
+    .contenedorGrid__imagen3 {
+        grid-column: 1/2;
+        grid-row: 2/3;
+    }
+    .contenedorGrid__imagen4 {
+        grid-column: 2/3;
+        grid-row: 2/3;
+    }
+    .contenedorGrid__imagen5 {
+        grid-column: 1/2;
+        grid-row: 3/4;
+    }
+    .contenedorGrid__imagen6 {
+        grid-column: 2/3;
+        grid-row: 3/4;
+    }    
+    .ubicacion {
+        justify-content: space-around;
+    }
+    .ubicacion__text {
+        width: 300px;
+        font-size: 16px;
+    }
+    .ubicacion__text p {
+        margin-bottom: 8px;
+    }
+    .ubicacion__text h3 {
+        font-weight: bold;
+    }
+    .ubicacion iframe {
+        height: 250px;
+        width: 400px;
+    }
+    .foot__img img {
+        width: 130px;
+        height: 75px;
+    }
+    .foot__contacto{
+        gap: 4px;
+    }
+    .foot__contacto span {
+        font-size: 13px;
+        font-weight: 900;
+    }
+    .foot__boton {
+        height: 40px;
+        width: 130px;
+    }
+    .foot__boton span {
+        font-size: 13px;
+    }
+    .foot__grid {
+        width: 480px;
+        gap: 10px;
+    }
+    .foot--bloques {
+        font-size: 12px;
+        line-height: 20px;
+    } 
+    .foot--subtitulo {
+        font-size: 14px;
+    }  
+    /*---------------------------------*/
+    /*---------------------------------*/
+    /*---------1.Hotel-----------*/
+    .menu--modificador {
+        height: 450px;
+    }
+    .carousel-caption p {
+        display: none;
+    }
+    .carousel-caption h5 {
+        display: none;
+    }
+    .carousel-control-prev {
+        bottom: 80px;
+    }
+    .carousel-control-next {
+        bottom: 80px;
+    }
+    .tarjetas_hotel__avisos img {
+        width: 400px;
+        height: 400px;
+        margin-bottom: 25px;
+    }
+    .tarjetas_hotel__textos {
+        width: 400px;
+        height: 400px;
+        font-size: 14px;
+        line-height: 23px;
+    }
+    .tarjetas_hotel__textos h3 {
+        font-size: 20px;
+    }
+    /*---------------------------------*/
+    /*---------------------------------*/
+    /*---------3.Registro-----------*/  
+    .portada-registro h1 { 
+        font-size: 3em;
+        height: 450px;
+    }
+    .portada-registro {
+        background-position-y: -300px;
+    }
+    .registro-bloque-Pr {
+    flex-direction: column;
+    align-items: center;
+    }
+    .registro__pag-textos {
+        margin-right: 0;
+        margin-bottom: 25px;
+    } 
+    /*---------------------------------*/
+    /*---------------------------------*/
+    /*---------4.Conocenos-----------*/  
+    .portada-conocenos h1 {
+        height: 350px;
+        font-size: 75px;
+    }
+    .tarjetas-conocenos__card1 {
+        flex-direction: column;
+    }
+    .tarjetas-conocenos__card2 {
+        flex-direction: column;
+    }
+    .tarjetas-conocenos__card__header img {
+        height: 450px;
+        width: 530px;
+        border-radius:  8px 8px 0 0;
+    }
+    .card--img--modificadora img {
+        border-radius:  0 0 8px 8px;
+    }
+    .tarjeta__conocenos__card__footer h3 {
+        font-size: 30px;
+    }
+    .tarjeta__conocenos__card__footer p {
+        width: 524px;
+        padding: 10px;
+        font-size: 16px;
+    }   
+}
+@media (max-width:575px){
+    .menu {
+        height: 250px;
+    }
+    .memenu__links img {
+        width: 80px;
+        height: 50px;
+        margin: 0;
+    }
+    .menu__links .menu__Hamb {
+        font-size: 30px;
+    }
+    .video-portada {
+        margin-top: 60px;
+    }
+    .video-portada h1 {
+        font-size: 1.5em;
+        top: 120px;
+        left: 0;
+    }
+    .position575 {
+        display: flex;
+        justify-content: center;
+    }
+    .booker {
+        position: static;
+        width: 350px;
+        height: 220px;
+        flex-direction: column;
+        justify-content: space-around;
+        border-radius: 18px;
+        margin-top: 10px;
+    }
+    .booker__tipologia  {
+        display: flex;
+        flex-direction: column;
+        font-size: 20px;
+    }
+    .booker__tipologia input, .booker__tipologia select {
+        font-size: 15px;
+        height: 20px;
+    }
+    .booker__boton input {
+        width: 75px;
+        height: 35px;
+        font-size: 17px;
+        font-weight: bold;
+    }
+    .tarjeta {
+        max-width: 360px;
+        height: 640px;
+        flex-direction: column;
+    }
+    .tarjeta__footer{
+        width: 360px;
+        height: 280px;
+    }
+    .contenedorGrid--celda h3 {
+        font-size: 18px;
+        width: 138px;
+        height: 24px;
+    }
+    .contenedorGrid {
+        grid-template-columns: repeat(2,150px);
+        grid-template-rows: repeat(3,150px);  
+    }
+    .ubicacion {
+        flex-direction: column;
+    }
+    .ubicacion__text {
+        font-size: 16px; 
+        text-align: center;
+        margin: 15px 0;
+    }
+    .ubicacion__text p {
+        margin: 0;
+    }
+    .ubicacion__text h3 {
+        font-size: 18px;
+        margin-bottom: 3px;
+        line-height: 25px;
+    }
+    .ubicacion iframe {
+        height: 250px;
+        width: 350px;
+    }
+    .registro {
+        margin-top: 15px;
+    }
+    .registro__inputs {
+        display: flex;
+        flex-direction: column;
+        gap: 10px;
+        align-items: center;
+    }
+    .registro__textos {
+        text-align: center;
+        font-size: 16px;
+    }
+    .registro__textos h3 {
+        margin: 0;
+        font-size: 20px;
+    }
+    .registro__links {
+        margin: 0;
+    }
+    .foot {
+        flex-direction: column;
+        height: 300px;
+        justify-content: space-evenly;
+    }
+    .foot__img {
+        height: 100px;
+    }
+    .foot__grid {
+        display: none;
+    }
+    /*---------------------------------*/
+    /*---------------------------------*/
+    /*---------1.Hotel-----------*/
+    .menu--modificador {
+        height: 350px;
+    }
+    .carousel-caption {
+        font-size: 12px;
+        bottom: 120px;
+    }
+    .carousel-control-prev {
+        bottom: 20px;
+    }
+    .carousel-control-next {
+        bottom: 20px;
+    }
+    .tarjetas_hotel__avisos img {
+        width: 300px;
+        height: 300px;
+        margin-bottom: 25px;
+    }
+    .tarjetas_hotel__textos {
+        width: 320px;
+        height: 350px;
+        font-size: 10px;
+        line-height: 20px;
+    }
+    .tarjetas_hotel__textos h3 {
+        font-size: 13px;
+    } 
+    /*---------------------------------*/
+    /*---------------------------------*/
+    /*---------2.Exp Cent-----------*/
+    .exp-cent h1 {
+        height: 200px;
+        font-size: 2em;
+    }
+    /*---------------------------------*/
+    /*---------------------------------*/
+    /*---------3.Registro-----------*/  
+    .portada-registro h1 { 
+        font-size: 2em;
+        height: 350px;
+    }
+    .registro-bloque-Pr {
+    flex-direction: column;
+    align-items: center;
+    }
+    .registro__pag-textos {
+        width: 360px;
+        margin-right: 0;
+        margin-bottom: 25px;
+    }
+    .registro__pag-textos p {
+        font-size: 15px;
+        line-height: 25px;
+    }  
+    .registro__pag-textos span {
+        font-size: 15px;
+    }
+    .registro__pag-textos h3 {
+        font-size: 25px;
+    }
+    /*---------------------------------*/
+    /*---------------------------------*/
+    /*---------4.Conocenos-----------*/  
+    .portada-conocenos h1 {
+        height: 250px;
+        font-size: 60px;
+    }
+    .tarjetas-conocenos__card__header img {
+        height: 350px;
+        width: 420px;
+    }
+    .tarjeta__conocenos__card__footer {
+        width: auto;
+    }
+    .tarjeta__conocenos__card__footer h3 {
+        font-size: 21px;
+    }
+    .tarjeta__conocenos__card__footer p {
+        width: 420px;
+        padding: 10px;
+        font-size: 16px;
+    }
+}
