@@ -441,47 +441,119 @@
     color: white;
     font-family: 'Montserrat', sans-serif;
 }
+.registro {
+    height: 250px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
+    .registro__textos {
+        text-align: center;
+    }
+    .registro__inputs {
+        input {
+        width: 250px;
+        height: 45px;
+        border-radius: 50px;
+        padding: 0 15px;
+        margin-right: 5px;
+        }
+        .registro__boton {
+            background-color: rgb(228, 132, 6);
+            height: 45px;
+            width: 140px;
+            border-radius: 50px;
+            color: white;
+            font-size: 14px;
+            font-weight:900 ;
+            
+            display: inline-flex;
+            align-items: center;
+            justify-content: center;
+            transition: .3s ease all;
+            cursor: pointer;
+            position: relative;
+            overflow: hidden;
+            border: solid 3px rgb(228, 132, 6);
+            span {
+                z-index: 2;
+            }
+            &::after {
+                content: "";
+                width: 1px;
+                height: 1px;
+                background-color:none;
+                position: absolute;
+                z-index: 1;
+                top: 50%;
+                left: 50%;
+                transition: .5s ease-in-out all;
+                border-radius: 100px;  
+            }
+            &:hover {
+                &::after {
+                    transform: scale(200);
+                    background-color: black;
+                }
+            }
+        }
+    }
+    .registro__redes {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        .registro__links {
+            margin-top: 10px;
+            font-size: 30px;
+            word-spacing: 10px;
+            a {
+                color: white;
+            }
+        }
+    }
+}
 .tarjetas_hotel {
     background-color: #d8d6d6;
     height: auto;
     width: 100%;
     margin-top: 40px;
+    .tarjetas_hotel__avisos {
+        width: 100%;
+        height: auto;
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+        flex-wrap: wrap;
+        .tarjetas_hotel__textos {
+            width: 850px;
+            padding: 15px;
+            height: 850px;
+            font-size: 25px;
+            line-height: 40px;
+            text-align: center;
+            font-family: 'Montserrat', sans-serif;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            h3 {
+                margin-bottom: 15px;
+                font-size: 45px;
+                font-family: 'Playfair Display', serif;
+                font-weight: 800;
+                text-decoration: underline;
+            }
+        }
+        img {
+            border-radius: 20px;
+            width: 700px;
+            height: 700px;
+            -webkit-box-shadow: 2px 5px 16px 0px #414346, 38px 7px 12px -3px rgba(0,0,0,0); 
+            box-shadow: 2px 5px 16px 0px #303233, 38px 7px 12px -3px rgba(0,0,0,0);
+            background: #1C6EA4;
+        }
+    }
 }
-.tarjetas_hotel__avisos {
-    width: 100%;
-    height: auto;
-    display: flex;
-    justify-content: space-around;
-    align-items: center;
-    flex-wrap: wrap;
-}
-.tarjetas_hotel__avisos img {
-    border-radius: 20px;
-    width: 700px;
-    height: 700px;
-    -webkit-box-shadow: 2px 5px 16px 0px #414346, 38px 7px 12px -3px rgba(0,0,0,0); 
-    box-shadow: 2px 5px 16px 0px #303233, 38px 7px 12px -3px rgba(0,0,0,0);
-    background: #1C6EA4;
-}
-.tarjetas_hotel__textos {
-    width: 850px;
-    padding: 15px;
-    height: 850px;
-    font-size: 25px;
-    line-height: 40px;
-    text-align: center;
-    font-family: 'Montserrat', sans-serif;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-}
-.tarjetas_hotel__textos h3 {
-    margin-bottom: 15px;
-    font-size: 45px;
-    font-family: 'Playfair Display', serif;
-    font-weight: 800;
-    text-decoration: underline;
-}
+
 /*--------------------------------------------*/
 /*--------------------------------------------*/
 /*------2.Exp Cent--------*/
@@ -490,19 +562,20 @@
     height: 550px;
     background-image: url(../multimedia/img/carrusel1.jpeg);
     background-position-y: -150px;
+    h1 {
+        color:white;
+        width: 100%;
+        height: 550px;
+        font-size: 6em;
+        display: inline-flex;
+        justify-content: center;
+        align-items: center;
+        font-weight: 900;
+        text-shadow: 3px 5px 2px #474747, 32px 20px 9px rgba(255,255,255,0.23);
+        color: #FFFFFF;
+    }
 }
-.exp-cent h1 {
-    color:white;
-    width: 100%;
-    height: 550px;
-    font-size: 6em;
-    display: inline-flex;
-    justify-content: center;
-    align-items: center;
-    font-weight: 900;
-    text-shadow: 3px 5px 2px #474747, 32px 20px 9px rgba(255,255,255,0.23);
-    color: #FFFFFF;
-}
+
 .tarjetas-exp-cent {
     width: 1400px;
     height: auto;
@@ -510,143 +583,142 @@
     flex-wrap: wrap;
     justify-content: space-around;
     margin: auto;
-}
-.tarjeta-exp-cent {
-    width:410px;
-    height: auto;
-    display: flex;
-    flex-direction: column;
-    border-radius: 8px;
+    .tarjeta-exp-cent {
+        width:410px;
+        height: auto;
+        display: flex;
+        flex-direction: column;
+        border-radius: 8px;
+        
+        overflow: hidden;
+        box-shadow: 0 0 12px #d7d7d7;
+        background-color: #f8f8f8;
+        font-family: 'Gill Sans', Calibri, sans-serif;
+        color: rgb(43, 41, 41);
+        margin: 25px;
     
-    overflow: hidden;
-    box-shadow: 0 0 12px #d7d7d7;
-    background-color: #f8f8f8;
-    font-family: 'Gill Sans', Calibri, sans-serif;
-    color: rgb(43, 41, 41);
-    margin: 25px;
-
-    transition: transform 0.3s ease;
+        transition: transform 0.3s ease;
+        &:hover {
+            transform: scale(1.1);
+        }
+        .tarjeta-exp-cent__header img {
+            width: 410px;
+            height: 430px;
+            object-fit: cover;
+        }
+        .tarjeta-exp-cent__footer {
+            font-size: 20px;
+            padding: 10px;
+            text-align: center;
+            h3 {
+                font-size: 23px;
+                text-align: center;
+                margin-bottom: 5px;
+            }
+        }
+    }
 }
-.tarjeta-exp-cent:hover {
-    transform: scale(1.1);
-}
-.tarjeta-exp-cent__header img {
-    width: 410px;
-    height: 430px;
-    object-fit: cover;
-}
-.tarjeta-exp-cent__footer {
-    font-size: 20px;
-    padding: 10px;
-    text-align: center;
-}
-.tarjeta-exp-cent__footer h3 {
-    font-size: 23px;
-    text-align: center;
-    margin-bottom: 5px;
-}
-
-
 /*--------------------------------------------*/
 /*--------------------------------------------*/
 /*------3.registro--------*/
+.imagen-fondo--body {
+    background-image: url(../multimedia/img/probarfavi.png);  
+}
 .portada-registro {
     margin-top: 74px;
     height: 550px;
     background-image: url(../multimedia/img/carrusel1.jpeg);
     background-attachment: fixed;
     background-position-y: -150px;
+    h1 {
+        color:white;
+        width: 100%;
+        height: 550px;
+        font-size: 6em;
+        display: inline-flex;
+        justify-content: center;
+        align-items: center;
+        font-weight: 900;
+        text-shadow: 3px 5px 2px #474747, 32px 20px 9px rgba(255,255,255,0.23);
+        color: #FFFFFF;
+    }
 }
-.portada-registro h1 {
-    color:white;
-    width: 100%;
-    height: 550px;
-    font-size: 6em;
-    display: inline-flex;
-    justify-content: center;
-    align-items: center;
-    font-weight: 900;
-    text-shadow: 3px 5px 2px #474747, 32px 20px 9px rgba(255,255,255,0.23);
-    color: #FFFFFF;
-}
-.imagen-fondo--body {
-    background-image: url(../multimedia/img/probarfavi.png);  
-}
+
+
 .registro-bloque-Pr {
     display: flex;
     width: 100%;
     justify-content: center;
     margin: 150px 0;
+    .registro__pag-textos {
+        background-color: #e4e3e3e0;
+        padding: 20px;
+        width: 570px;
+        border-radius: 4px;
+        margin-right: 150px;
+        font-family: 'Montserrat', sans-serif;
+        font-size: 19px;
+        line-height: 30px;
+        color: black;
+        font-weight: bold;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-around;
+        text-align: center;
+        h3 {
+            font-family: 'Playfair Display', serif;
+            font-size: 40px;
+            margin: 20px 0;
+            color:  rgb(228, 132, 6);
+            font-weight: bold;
+        }
+    }
+    .formulario {
+        width: 400px;
+        background-color: #24303c;
+        padding: 30px;
+        border-radius: 4px;
+        font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+        color: white;
+        display: flex;
+        flex-direction: column;
+        flex-wrap: wrap;
+        box-shadow: 7px 13px 37px #7a7474;
+        h4 {
+            font-size: 22px;
+            margin-bottom: 20px;
+            text-align: center;
+        }
+        .formulario__input {
+            width: 100%;
+            background-color: #24303c;
+            padding: 10px;
+            border-radius: 4px;
+            margin-bottom: 16px;
+            border: 1px solid rgb(228, 132, 6);
+            font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+            font-size: 18px;
+        }
+        .formulario__term-cond {
+            display: inline-flex;
+            justify-content: space-evenly;
+            align-items: center;
+            margin-bottom: 16px;
+            font-size: 18px;
+        }
+        .formulario__boton {
+            width: 100%;
+            background-color:  rgb(228, 132, 6);
+            border: none;
+            padding: 12px;
+            color: white;
+            font-size: 16px;
+            font-weight: bold;
+            cursor: pointer;
+            border-radius: 4px;
+        }
+    }
 }
-.registro__pag-textos {
-    background-color: #e4e3e3e0;
-    padding: 20px;
-    width: 570px;
-    border-radius: 4px;
-    margin-right: 150px;
-    font-family: 'Montserrat', sans-serif;
-    font-size: 19px;
-    line-height: 30px;
-    color: black;
-    font-weight: bold;
-    display: flex;
-    flex-direction: column;
-    justify-content: space-around;
-    text-align: center;
-}
-.registro__pag-textos h3 {
-    font-family: 'Playfair Display', serif;
-    font-size: 40px;
-    margin: 20px 0;
-    color:  rgb(228, 132, 6);
-    font-weight: bold;
-}
-.formulario {
-    width: 400px;
-    background-color: #24303c;
-    padding: 30px;
-    border-radius: 4px;
-    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
-    color: white;
-    display: flex;
-    flex-direction: column;
-    flex-wrap: wrap;
-    box-shadow: 7px 13px 37px #7a7474;
-}
-.formulario h4 {
-    font-size: 22px;
-    margin-bottom: 20px;
-    text-align: center;
-}
-.formulario__input {
-    width: 100%;
-    background-color: #24303c;
-    padding: 10px;
-    border-radius: 4px;
-    margin-bottom: 16px;
-    border: 1px solid rgb(228, 132, 6);
-    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
-    font-size: 18px;
-}
-.formulario__term-cond {
-    display: inline-flex;
-    justify-content: space-evenly;
-    align-items: center;
-    margin-bottom: 16px;
-    font-size: 18px;
-}
-.formulario__boton {
-    width: 100%;
-    background-color:  rgb(228, 132, 6);
-    border: none;
-    padding: 12px;
-    color: white;
-    font-size: 16px;
-    font-weight: bold;
-    cursor: pointer;
-    border-radius: 4px;
-}
-
 /*--------------------------------------------*/
 /*--------------------------------------------*/
 /*------4.Conocenos--------*/
@@ -654,19 +726,19 @@
     margin-top: 74px;
     height: 550px;
     background-image: url(../multimedia/img/carrusel1.jpeg);
-    background-position-y: -200px;  
-}
-.portada-conocenos h1 {
-    color:white;
-    width: 100%;
-    height: 550px;
-    font-size: 6em;
-    display: inline-flex;
-    justify-content: center;
-    align-items: center;
-    font-weight: 900;
-    text-shadow: 3px 5px 2px #474747, 32px 20px 9px rgba(255,255,255,0.23);
-    color: #FFFFFF;
+    background-position-y: -200px;
+    h1 {
+        color:white;
+        width: 100%;
+        height: 550px;
+        font-size: 6em;
+        display: inline-flex;
+        justify-content: center;
+        align-items: center;
+        font-weight: 900;
+        text-shadow: 3px 5px 2px #474747, 32px 20px 9px rgba(255,255,255,0.23);
+        color: #FFFFFF;
+    }  
 }
 .tarjetas-conocenos {
     width: 100%;
@@ -676,51 +748,74 @@
     display: flex;
     flex-direction: column;
     align-items: center;
-}
-.tarjetas-conocenos__card1 {
-    width: 1200px;
-    height: 500px;
-    background-color: #f8f8f8;
-    border-radius: 8px;
-    box-shadow: 0 0 12px #d7d7d7;
-    display: flex;
-    margin-bottom: 100px;
-}
-.tarjetas-conocenos__card2 {
-    width: 1200px;
-    height: 500px;
-    background-color: #f8f8f8;
-    border-radius: 8px;
-    box-shadow: 0 0 12px #d7d7d7;
-    display: flex; 
-}
-.tarjetas-conocenos__card__header img {
-    border-radius: 8px 0 0 8px;
-    height: 500px;
-    width: 550px;
-}
-.card--img--modificadora img {
-    border-radius: 0 8px 8px 0;
-}
-
-.tarjeta__conocenos__card__footer {
-    width: auto;
-    display: flex;
-    flex-direction: column;
-    padding: 10px 20px;
-    margin: 0;
-    justify-content: space-around;
-}
-.tarjeta__conocenos__card__footer h3 {
-    font-size: 40px;
-    margin: 0;
-    text-align: center;
-}
-.tarjeta__conocenos__card__footer p {
-    padding-top: 10px;
-    margin: 0;
-    font-size: 23px;
-    line-height: 29px;
+    .tarjetas-conocenos__card1 {
+        width: 1200px;
+        height: 500px;
+        background-color: #f8f8f8;
+        border-radius: 8px;
+        box-shadow: 0 0 12px #d7d7d7;
+        display: flex;
+        margin-bottom: 100px;
+        .tarjetas-conocenos__card__header img {
+            border-radius: 8px 0 0 8px;
+            height: 500px;
+            width: 550px;
+        }
+        .tarjeta__conocenos__card__footer {
+            width: auto;
+            display: flex;
+            flex-direction: column;
+            padding: 10px 20px;
+            margin: 0;
+            justify-content: space-around;
+            h3 {
+                font-size: 40px;
+                margin: 0;
+                text-align: center;
+            }
+            p {
+                padding-top: 10px;
+                margin: 0;
+                font-size: 23px;
+                line-height: 29px;
+            }
+        }
+    }
+    .tarjetas-conocenos__card2 {
+        width: 1200px;
+        height: 500px;
+        background-color: #f8f8f8;
+        border-radius: 8px;
+        box-shadow: 0 0 12px #d7d7d7;
+        display: flex;
+        .tarjeta__conocenos__card__footer {
+            width: auto;
+            display: flex;
+            flex-direction: column;
+            padding: 10px 20px;
+            margin: 0;
+            justify-content: space-around;
+            h3 {
+                font-size: 40px;
+                margin: 0;
+                text-align: center;
+            }
+            p {
+                padding-top: 10px;
+                margin: 0;
+                font-size: 23px;
+                line-height: 29px;
+            }
+        }
+        .tarjetas-conocenos__card__header img {
+            border-radius: 8px 0 0 8px;
+            height: 500px;
+            width: 550px;
+        } 
+        .card--img--modificadora img {
+            border-radius: 0 8px 8px 0;
+        }  
+    }
 }
 
 @media (max-width:1900px){
