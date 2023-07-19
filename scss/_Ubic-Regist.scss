@@ -1,0 +1,174 @@
+.bloqueMapaLogin {
+    width: 100%;
+    background-color: black;
+    color: white;
+    height: auto;
+    font-family: 'Montserrat', sans-serif;
+    margin-top: 100px;
+    .ubicacion {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: 400px;
+        @media (max-width:1024px){
+            justify-content: space-around;
+        }
+        @media (max-width:768px){
+            justify-content: space-around;
+        }
+        @media (max-width:575px){
+            flex-direction: column;
+        }
+        .ubicacion__text {
+            width: 450px;
+            line-height: 25px;
+            margin-right: 25px;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            @media (max-width:1024px){
+                font-size: 18px;
+                margin: 0;
+            }
+            @media (max-width:768px){
+                width: 300px;
+                font-size: 16px;
+            }
+            @media (max-width:575px){
+                font-size: 16px;
+                text-align: center;
+                margin: 15px 0;
+            }
+            h3 {
+                @media (max-width:1024px){
+                    font-size: 20px;
+                }
+                @media (max-width:768px){
+                    font-weight: bold;
+                }
+                @media (max-width:575px){
+                    font-size: 18px;
+                    margin-bottom: 3px;
+                    line-height: 25px;
+                }
+            }
+            p {
+                @media (max-width:768px){
+                    margin-bottom: 8px;
+                }
+                @media (max-width:575px){
+                    margin: 0;
+                }
+            }
+        }
+        iframe {
+            border-radius: 10px;
+            height: 350px;
+            @media (max-width:1024px){
+                height: 300px;
+                width: 450px;
+            }
+            @media (max-width:768px){
+                height: 250px;
+                width: 400px;
+            }
+            @media (max-width:575px){
+                height: 250px;
+                width: 350px;
+            }
+        }
+    }
+    .registro {
+        height: 250px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: space-around;
+        @media (max-width:575px){
+            margin-top: 15px;
+        }
+        .registro__textos {
+            text-align: center;
+            @media (max-width:575px){
+                text-align: center;
+                font-size: 16px;
+            }
+            h3 {
+                @media (max-width:575px){
+                    margin: 0;
+                    font-size: 20px;
+                }
+            }
+        }
+        .registro__inputs {
+            @media (max-width:575px){
+                display: flex;
+                flex-direction: column;
+                gap: 10px;
+                align-items: center;
+            }
+            input {
+            width: 250px;
+            height: 45px;
+            border-radius: 50px;
+            padding: 0 15px;
+            margin-right: 5px;
+            }
+            .registro__boton {
+                background-color: rgb(228, 132, 6);
+                height: 45px;
+                width: 140px;
+                border-radius: 50px;
+                color: white;
+                font-size: 14px;
+                font-weight:900 ;
+                
+                display: inline-flex;
+                align-items: center;
+                justify-content: center;
+                transition: .3s ease all;
+                cursor: pointer;
+                position: relative;
+                overflow: hidden;
+                border: solid 3px rgb(228, 132, 6);
+                span {
+                    z-index: 2;
+                }
+                &::after {
+                    content: "";
+                    width: 1px;
+                    height: 1px;
+                    background-color:none;
+                    position: absolute;
+                    z-index: 1;
+                    top: 50%;
+                    left: 50%;
+                    transition: .5s ease-in-out all;
+                    border-radius: 100px;  
+                }
+                &:hover {
+                    &::after {
+                        transform: scale(200);
+                        background-color: black;
+                    }
+                }
+            }
+        }
+        .registro__redes {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            .registro__links {
+                margin-top: 10px;
+                font-size: 30px;
+                word-spacing: 10px;
+                @media (max-width:575px){
+                    margin: 0;
+                }
+                a {
+                    color: white;
+                }
+            }
+        }
+    }
+}
