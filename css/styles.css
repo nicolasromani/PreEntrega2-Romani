@@ -71,6 +71,11 @@
   font-size: 1.3rem;
   padding: 5px 20px;
 }
+@media (max-width: 1024px) {
+  .menu .menu__links ul li a {
+    font-size: 1rem;
+  }
+}
 .menu .video-portada {
   margin-top: 74px;
 }
@@ -161,6 +166,20 @@
     bottom: 30px;
   }
 }
+@media (max-width: 1200px) {
+  .booker {
+    left: 180px;
+    width: 70%;
+    bottom: 30px;
+  }
+}
+@media (max-width: 1024px) {
+  .booker {
+    left: 90px;
+    width: 80%;
+    height: 55px;
+  }
+}
 .booker .booker__tipologia {
   font-size: 20px;
   font-weight: bolder;
@@ -173,6 +192,11 @@
 @media (max-width: 1440px) {
   .booker .booker__tipologia {
     font-size: 15px;
+  }
+}
+@media (max-width: 1024px) {
+  .booker .booker__tipologia {
+    font-size: 13px;
   }
 }
 .booker .booker__tipologia input {
@@ -192,6 +216,12 @@
     height: 23px;
   }
 }
+@media (max-width: 1024px) {
+  .booker .booker__tipologia input {
+    font-size: 12px;
+    height: 20px;
+  }
+}
 .booker .booker__tipologia select {
   font-size: 15px;
   height: 35px;
@@ -207,6 +237,12 @@
   .booker .booker__tipologia select {
     font-size: 13px;
     height: 23px;
+  }
+}
+@media (max-width: 1024px) {
+  .booker .booker__tipologia select {
+    font-size: 12px;
+    height: 20px;
   }
 }
 .booker .booker__boton input {
@@ -229,6 +265,13 @@
     width: 100px;
     height: 35px;
     font-size: 20px;
+  }
+}
+@media (max-width: 1024px) {
+  .booker .booker__boton input {
+    width: 80px;
+    height: 30px;
+    font-size: 16px;
   }
 }
 
@@ -306,6 +349,12 @@
   grid-template-rows: 350px;
   gap: 10px;
 }
+@media (max-width: 1200px) {
+  .contenedorGrid {
+    grid-template-columns: repeat(2, 350px);
+    grid-template-rows: 350px;
+  }
+}
 .contenedorGrid .contenedorGrid__imagen1 {
   grid-column: 1/2;
   grid-row: 1/2;
@@ -318,17 +367,41 @@
   grid-column: 3/4;
   grid-row: 1/2;
 }
+@media (max-width: 1200px) {
+  .contenedorGrid .contenedorGrid__imagen3 {
+    grid-column: 1/2;
+    grid-row: 2/3;
+  }
+}
 .contenedorGrid .contenedorGrid__imagen4 {
   grid-column: 1/2;
   grid-row: 2/3;
+}
+@media (max-width: 1200px) {
+  .contenedorGrid .contenedorGrid__imagen4 {
+    grid-column: 2/3;
+    grid-row: 2/3;
+  }
 }
 .contenedorGrid .contenedorGrid__imagen5 {
   grid-column: 2/3;
   grid-row: 2/3;
 }
+@media (max-width: 1200px) {
+  .contenedorGrid .contenedorGrid__imagen5 {
+    grid-column: 1/2;
+    grid-row: 3/4;
+  }
+}
 .contenedorGrid .contenedorGrid__imagen6 {
   grid-column: 3/4;
   grid-row: 2/3;
+}
+@media (max-width: 1200px) {
+  .contenedorGrid .contenedorGrid__imagen6 {
+    grid-column: 2/3;
+    grid-row: 3/4;
+  }
 }
 
 .contenedorGrid--celda {
@@ -376,6 +449,11 @@
   align-items: center;
   height: 400px;
 }
+@media (max-width: 1024px) {
+  .bloqueMapaLogin .ubicacion {
+    justify-content: space-around;
+  }
+}
 .bloqueMapaLogin .ubicacion .ubicacion__text {
   width: 450px;
   line-height: 25px;
@@ -384,9 +462,26 @@
   flex-direction: column;
   justify-content: center;
 }
+@media (max-width: 1024px) {
+  .bloqueMapaLogin .ubicacion .ubicacion__text {
+    font-size: 18px;
+    margin: 0;
+  }
+}
+@media (max-width: 1024px) {
+  .bloqueMapaLogin .ubicacion .ubicacion__text h3 {
+    font-size: 20px;
+  }
+}
 .bloqueMapaLogin .ubicacion iframe {
   border-radius: 10px;
   height: 350px;
+}
+@media (max-width: 1024px) {
+  .bloqueMapaLogin .ubicacion iframe {
+    height: 300px;
+    width: 450px;
+  }
 }
 .bloqueMapaLogin .registro {
   height: 250px;
@@ -471,6 +566,16 @@
     justify-content: space-between;
   }
 }
+@media (max-width: 1200px) {
+  .foot {
+    justify-content: space-evenly;
+  }
+}
+@media (max-width: 1024px) {
+  .foot {
+    justify-content: space-between;
+  }
+}
 .foot .foot__img {
   height: 150px;
 }
@@ -528,6 +633,16 @@
   display: grid;
   grid-template-columns: repeat(4, 1fr);
 }
+@media (max-width: 1200px) {
+  .foot .foot__grid {
+    width: 750px;
+  }
+}
+@media (max-width: 1024px) {
+  .foot .foot__grid {
+    width: 650px;
+  }
+}
 .foot .foot__grid .foot__bloque1 {
   grid-column: 1/2;
 }
@@ -546,10 +661,21 @@
   flex-direction: column;
   line-height: 25px;
 }
+@media (max-width: 1024px) {
+  .foot--bloques {
+    font-size: 14px;
+    line-height: 25px;
+  }
+}
 
 .foot--subtitulo {
   font-weight: bold;
   font-size: 18px;
+}
+@media (max-width: 1024px) {
+  .foot--subtitulo {
+    font-size: 16px;
+  }
 }
 
 /*--------------------------------------------*/
@@ -557,6 +683,11 @@
 /*------1.hotel--------*/
 .menu--modificador {
   height: 624px;
+}
+@media (max-width: 1024px) {
+  .menu--modificador {
+    height: 450px;
+  }
 }
 
 .d-block {
@@ -567,6 +698,30 @@
 
 .carousel-caption {
   font-size: 35px;
+}
+@media (max-width: 1200px) {
+  .carousel-caption {
+    font-size: 20px;
+    bottom: 100px;
+  }
+}
+@media (max-width: 1024px) {
+  .carousel-caption {
+    font-size: 17px;
+    bottom: 160px;
+  }
+}
+
+@media (max-width: 1200px) {
+  .carousel-control-prev {
+    bottom: 90px;
+  }
+}
+
+@media (max-width: 1200px) {
+  .carousel-control-next {
+    bottom: 90px;
+  }
 }
 
 .registro--modificador {
@@ -677,6 +832,22 @@
     line-height: 35px;
   }
 }
+@media (max-width: 1200px) {
+  .tarjetas_hotel .tarjetas_hotel__avisos .tarjetas_hotel__textos {
+    width: 550px;
+    height: 550px;
+    font-size: 18px;
+    line-height: 30px;
+  }
+}
+@media (max-width: 1024px) {
+  .tarjetas_hotel .tarjetas_hotel__avisos .tarjetas_hotel__textos {
+    width: 500px;
+    height: 500px;
+    font-size: 17px;
+    line-height: 28px;
+  }
+}
 .tarjetas_hotel .tarjetas_hotel__avisos .tarjetas_hotel__textos h3 {
   margin-bottom: 15px;
   font-size: 45px;
@@ -687,6 +858,16 @@
 @media (max-width: 1400px) {
   .tarjetas_hotel .tarjetas_hotel__avisos .tarjetas_hotel__textos h3 {
     font-size: 35px;
+  }
+}
+@media (max-width: 1200px) {
+  .tarjetas_hotel .tarjetas_hotel__avisos .tarjetas_hotel__textos h3 {
+    font-size: 28px;
+  }
+}
+@media (max-width: 1024px) {
+  .tarjetas_hotel .tarjetas_hotel__avisos .tarjetas_hotel__textos h3 {
+    font-size: 25px;
   }
 }
 .tarjetas_hotel .tarjetas_hotel__avisos img {
@@ -701,6 +882,18 @@
   .tarjetas_hotel .tarjetas_hotel__avisos img {
     width: 600px;
     height: 600px;
+  }
+}
+@media (max-width: 1200px) {
+  .tarjetas_hotel .tarjetas_hotel__avisos img {
+    width: 500px;
+    height: 500px;
+  }
+}
+@media (max-width: 1024px) {
+  .tarjetas_hotel .tarjetas_hotel__avisos img {
+    width: 450px;
+    height: 450px;
   }
 }
 
@@ -724,6 +917,12 @@
   font-weight: 900;
   text-shadow: 3px 5px 2px #474747, 32px 20px 9px rgba(255, 255, 255, 0.23);
   color: #FFFFFF;
+}
+@media (max-width: 1024px) {
+  .exp-cent h1 {
+    height: 300px;
+    font-size: 4em;
+  }
 }
 
 .tarjetas-exp-cent {
@@ -786,6 +985,11 @@
   background-attachment: fixed;
   background-position-y: -150px;
 }
+@media (max-width: 1024px) {
+  .portada-registro {
+    background-position-y: -200px;
+  }
+}
 .portada-registro h1 {
   color: white;
   width: 100%;
@@ -798,12 +1002,23 @@
   text-shadow: 3px 5px 2px #474747, 32px 20px 9px rgba(255, 255, 255, 0.23);
   color: #FFFFFF;
 }
+@media (max-width: 1024px) {
+  .portada-registro h1 {
+    font-size: 4em;
+  }
+}
 
 .registro-bloque-Pr {
   display: flex;
   width: 100%;
   justify-content: center;
   margin: 150px 0;
+}
+@media (max-width: 1024px) {
+  .registro-bloque-Pr {
+    width: 100%;
+    justify-content: space-around;
+  }
 }
 .registro-bloque-Pr .registro__pag-textos {
   background-color: rgba(228, 227, 227, 0.8784313725);
@@ -820,6 +1035,11 @@
   flex-direction: column;
   justify-content: space-around;
   text-align: center;
+}
+@media (max-width: 1024px) {
+  .registro-bloque-Pr .registro__pag-textos {
+    margin-right: 0;
+  }
 }
 .registro-bloque-Pr .registro__pag-textos h3 {
   font-family: "Playfair Display", serif;
@@ -895,6 +1115,11 @@
   text-shadow: 3px 5px 2px #474747, 32px 20px 9px rgba(255, 255, 255, 0.23);
   color: #FFFFFF;
 }
+@media (max-width: 1024px) {
+  .portada-conocenos h1 {
+    height: 350px;
+  }
+}
 
 .tarjetas-conocenos {
   width: 100%;
@@ -914,10 +1139,22 @@
   display: flex;
   margin-bottom: 100px;
 }
+@media (max-width: 1024px) {
+  .tarjetas-conocenos .tarjetas-conocenos__card1 {
+    width: auto;
+    height: auto;
+  }
+}
 .tarjetas-conocenos .tarjetas-conocenos__card1 .tarjetas-conocenos__card__header img {
   border-radius: 8px 0 0 8px;
   height: 500px;
   width: 550px;
+}
+@media (max-width: 1024px) {
+  .tarjetas-conocenos .tarjetas-conocenos__card1 .tarjetas-conocenos__card__header img {
+    height: 450px;
+    width: 500px;
+  }
 }
 .tarjetas-conocenos .tarjetas-conocenos__card1 .tarjeta__conocenos__card__footer {
   width: auto;
@@ -927,10 +1164,22 @@
   margin: 0;
   justify-content: space-around;
 }
+@media (max-width: 1024px) {
+  .tarjetas-conocenos .tarjetas-conocenos__card1 .tarjeta__conocenos__card__footer {
+    width: 524px;
+    justify-content: space-evenly;
+    padding: 0;
+  }
+}
 .tarjetas-conocenos .tarjetas-conocenos__card1 .tarjeta__conocenos__card__footer h3 {
   font-size: 40px;
   margin: 0;
   text-align: center;
+}
+@media (max-width: 1024px) {
+  .tarjetas-conocenos .tarjetas-conocenos__card1 .tarjeta__conocenos__card__footer h3 {
+    font-size: 36px;
+  }
 }
 .tarjetas-conocenos .tarjetas-conocenos__card1 .tarjeta__conocenos__card__footer p {
   padding-top: 10px;
@@ -938,230 +1187,8 @@
   font-size: 23px;
   line-height: 29px;
 }
-.tarjetas-conocenos .tarjetas-conocenos__card2 {
-  width: 1200px;
-  height: 500px;
-  background-color: #f8f8f8;
-  border-radius: 8px;
-  box-shadow: 0 0 12px #d7d7d7;
-  display: flex;
-}
-.tarjetas-conocenos .tarjetas-conocenos__card2 .tarjeta__conocenos__card__footer {
-  width: auto;
-  display: flex;
-  flex-direction: column;
-  padding: 10px 20px;
-  margin: 0;
-  justify-content: space-around;
-}
-.tarjetas-conocenos .tarjetas-conocenos__card2 .tarjeta__conocenos__card__footer h3 {
-  font-size: 40px;
-  margin: 0;
-  text-align: center;
-}
-.tarjetas-conocenos .tarjetas-conocenos__card2 .tarjeta__conocenos__card__footer p {
-  padding-top: 10px;
-  margin: 0;
-  font-size: 23px;
-  line-height: 29px;
-}
-.tarjetas-conocenos .tarjetas-conocenos__card2 .tarjetas-conocenos__card__header img {
-  border-radius: 8px 0 0 8px;
-  height: 500px;
-  width: 550px;
-}
-.tarjetas-conocenos .tarjetas-conocenos__card2 .card--img--modificadora img {
-  border-radius: 0 8px 8px 0;
-}
-
-@media (max-width: 1200px) {
-  .booker {
-    left: 180px;
-    width: 70%;
-    bottom: 30px;
-  }
-  .contenedorGrid {
-    grid-template-columns: repeat(2, 350px);
-    grid-template-rows: 350px;
-  }
-  .contenedorGrid__imagen1 {
-    grid-column: 1/2;
-    grid-row: 1/2;
-  }
-  .contenedorGrid__imagen2 {
-    grid-column: 2/3;
-    grid-row: 1/2;
-  }
-  .contenedorGrid__imagen3 {
-    grid-column: 1/2;
-    grid-row: 2/3;
-  }
-  .contenedorGrid__imagen4 {
-    grid-column: 2/3;
-    grid-row: 2/3;
-  }
-  .contenedorGrid__imagen5 {
-    grid-column: 1/2;
-    grid-row: 3/4;
-  }
-  .contenedorGrid__imagen6 {
-    grid-column: 2/3;
-    grid-row: 3/4;
-  }
-  .foot {
-    justify-content: space-evenly;
-  }
-  .foot__grid {
-    width: 750px;
-  }
-  /*---------------------------------*/
-  /*---------------------------------*/
-  /*---------1.Hotel-----------*/
-  .carousel-caption {
-    font-size: 20px;
-    bottom: 100px;
-  }
-  .carousel-control-prev {
-    bottom: 90px;
-  }
-  .carousel-control-next {
-    bottom: 90px;
-  }
-  .tarjetas_hotel__avisos img {
-    width: 500px;
-    height: 500px;
-  }
-  .tarjetas_hotel__textos {
-    width: 550px;
-    height: 550px;
-    font-size: 18px;
-    line-height: 30px;
-  }
-  .tarjetas_hotel__textos h3 {
-    font-size: 28px;
-  }
-}
 @media (max-width: 1024px) {
-  .menu__links ul li a {
-    font-size: 1rem;
-  }
-  .booker {
-    left: 90px;
-    width: 80%;
-    height: 55px;
-  }
-  .booker__tipologia {
-    font-size: 13px;
-  }
-  .booker__tipologia input, .booker__tipologia select {
-    font-size: 12px;
-    height: 20px;
-  }
-  .booker__boton input {
-    width: 80px;
-    height: 30px;
-    font-size: 16px;
-  }
-  .ubicacion {
-    justify-content: space-around;
-  }
-  .ubicacion__text {
-    font-size: 18px;
-    margin: 0;
-  }
-  .ubicacion__text h3 {
-    font-size: 20px;
-  }
-  .ubicacion iframe {
-    height: 300px;
-    width: 450px;
-  }
-  .foot {
-    justify-content: space-between;
-  }
-  .foot__grid {
-    width: 650px;
-  }
-  .foot--bloques {
-    font-size: 14px;
-    line-height: 25px;
-  }
-  .foot--subtitulo {
-    font-size: 16px;
-  }
-  /*---------------------------------*/
-  /*---------------------------------*/
-  /*---------1.Hotel-----------*/
-  .menu--modificador {
-    height: 450px;
-  }
-  .carousel-caption {
-    font-size: 17px;
-    bottom: 160px;
-  }
-  .tarjetas_hotel__avisos img {
-    width: 450px;
-    height: 450px;
-  }
-  .tarjetas_hotel__textos {
-    width: 500px;
-    height: 500px;
-    font-size: 17px;
-    line-height: 28px;
-  }
-  .tarjetas_hotel__textos h3 {
-    font-size: 25px;
-  }
-  /*---------------------------------*/
-  /*---------------------------------*/
-  /*---------2.Exp Cent-----------*/
-  .exp-cent h1 {
-    height: 300px;
-    font-size: 4em;
-  }
-  /*---------------------------------*/
-  /*---------------------------------*/
-  /*---------3.Registro-----------*/
-  .portada-registro h1 {
-    font-size: 4em;
-  }
-  .portada-registro {
-    background-position-y: -200px;
-  }
-  .registro-bloque-Pr {
-    width: 100%;
-    justify-content: space-around;
-  }
-  .registro__pag-textos {
-    margin-right: 0;
-  }
-  /*---------------------------------*/
-  /*---------------------------------*/
-  /*---------4.Conocenos-----------*/
-  .portada-conocenos h1 {
-    height: 350px;
-  }
-  .tarjetas-conocenos__card1 {
-    width: auto;
-    height: auto;
-  }
-  .tarjetas-conocenos__card2 {
-    width: auto;
-    height: auto;
-  }
-  .tarjetas-conocenos__card__header img {
-    height: 450px;
-    width: 500px;
-  }
-  .tarjeta__conocenos__card__footer {
-    width: 524px;
-    justify-content: space-evenly;
-    padding: 0;
-  }
-  .tarjeta__conocenos__card__footer h3 {
-    font-size: 36px;
-  }
-  .tarjeta__conocenos__card__footer p {
+  .tarjetas-conocenos .tarjetas-conocenos__card1 .tarjeta__conocenos__card__footer p {
     width: 510px;
     padding-top: 0;
     padding-left: 10px;
@@ -1171,6 +1198,77 @@
     text-align: center;
   }
 }
+.tarjetas-conocenos .tarjetas-conocenos__card2 {
+  width: 1200px;
+  height: 500px;
+  background-color: #f8f8f8;
+  border-radius: 8px;
+  box-shadow: 0 0 12px #d7d7d7;
+  display: flex;
+}
+@media (max-width: 1024px) {
+  .tarjetas-conocenos .tarjetas-conocenos__card2 {
+    width: auto;
+    height: auto;
+  }
+}
+.tarjetas-conocenos .tarjetas-conocenos__card2 .tarjeta__conocenos__card__footer {
+  width: auto;
+  display: flex;
+  flex-direction: column;
+  padding: 10px 20px;
+  margin: 0;
+  justify-content: space-around;
+}
+@media (max-width: 1024px) {
+  .tarjetas-conocenos .tarjetas-conocenos__card2 .tarjeta__conocenos__card__footer {
+    width: 524px;
+    justify-content: space-evenly;
+    padding: 0;
+  }
+}
+.tarjetas-conocenos .tarjetas-conocenos__card2 .tarjeta__conocenos__card__footer h3 {
+  font-size: 40px;
+  margin: 0;
+  text-align: center;
+}
+@media (max-width: 1024px) {
+  .tarjetas-conocenos .tarjetas-conocenos__card2 .tarjeta__conocenos__card__footer h3 {
+    font-size: 36px;
+  }
+}
+.tarjetas-conocenos .tarjetas-conocenos__card2 .tarjeta__conocenos__card__footer p {
+  padding-top: 10px;
+  margin: 0;
+  font-size: 23px;
+  line-height: 29px;
+}
+@media (max-width: 1024px) {
+  .tarjetas-conocenos .tarjetas-conocenos__card2 .tarjeta__conocenos__card__footer p {
+    width: 510px;
+    padding-top: 0;
+    padding-left: 10px;
+    margin: 0;
+    font-size: 18px;
+    line-height: 26px;
+    text-align: center;
+  }
+}
+.tarjetas-conocenos .tarjetas-conocenos__card2 .tarjetas-conocenos__card__header img {
+  border-radius: 8px 0 0 8px;
+  height: 500px;
+  width: 550px;
+}
+@media (max-width: 1024px) {
+  .tarjetas-conocenos .tarjetas-conocenos__card2 .tarjetas-conocenos__card__header img {
+    height: 450px;
+    width: 500px;
+  }
+}
+.tarjetas-conocenos .tarjetas-conocenos__card2 .card--img--modificadora img {
+  border-radius: 0 8px 8px 0;
+}
+
 @media (max-width: 768px) {
   .menu__links .menu__Hamb {
     display: block;
