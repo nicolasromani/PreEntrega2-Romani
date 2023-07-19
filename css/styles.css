@@ -58,11 +58,36 @@
   width: 100px;
   height: 60px;
 }
+@media (max-width: 575px) {
+  .menu .menu__links a img {
+    width: 80px;
+    height: 50px;
+    margin: 0;
+  }
+}
 .menu .menu__links ul {
   display: flex;
   list-style: none;
   margin: 0;
   padding: 0;
+}
+@media (max-width: 768px) {
+  .menu .menu__links ul {
+    position: fixed;
+    top: 0;
+    left: -55vw;
+    background-color: white;
+    flex-direction: column;
+    align-items: start;
+    padding: 10px;
+    width: 55vw;
+    height: 100vw;
+    transition: 0.5s;
+    border: solid black 1px;
+  }
+  .menu .menu__links ul:hover {
+    left: 0px;
+  }
 }
 .menu .menu__links ul li a {
   color: white;
@@ -76,8 +101,18 @@
     font-size: 1rem;
   }
 }
+@media (max-width: 768px) {
+  .menu .menu__links ul li a {
+    color: black;
+  }
+}
 .menu .video-portada {
   margin-top: 74px;
+}
+@media (max-width: 575px) {
+  .menu .video-portada {
+    margin-top: 60px;
+  }
 }
 .menu .video-portada video {
   width: 100%;
@@ -137,8 +172,30 @@
   font-size: 35px;
   display: none;
 }
+@media (max-width: 768px) {
+  .menu__Hamb {
+    display: block;
+    order: -1;
+    margin: 15px;
+  }
+  .menu__Hamb:hover + ul {
+    left: 0px;
+  }
+}
+@media (max-width: 575px) {
+  .menu__Hamb {
+    font-size: 30px;
+  }
+}
 
 /*--------------------------------------------*/
+@media (max-width: 575px) {
+  .position575 {
+    display: flex;
+    justify-content: center;
+  }
+}
+
 .booker {
   background-color: darkgray;
   width: 65%;
@@ -180,6 +237,24 @@
     height: 55px;
   }
 }
+@media (max-width: 768px) {
+  .booker {
+    left: 60px;
+    height: 37px;
+    bottom: 18px;
+  }
+}
+@media (max-width: 575px) {
+  .booker {
+    position: static;
+    width: 350px;
+    height: 220px;
+    flex-direction: column;
+    justify-content: space-around;
+    border-radius: 18px;
+    margin-top: 10px;
+  }
+}
 .booker .booker__tipologia {
   font-size: 20px;
   font-weight: bolder;
@@ -197,6 +272,19 @@
 @media (max-width: 1024px) {
   .booker .booker__tipologia {
     font-size: 13px;
+  }
+}
+@media (max-width: 768px) {
+  .booker .booker__tipologia {
+    font-size: 10px;
+    text-align: center;
+  }
+}
+@media (max-width: 575px) {
+  .booker .booker__tipologia {
+    display: flex;
+    flex-direction: column;
+    font-size: 20px;
   }
 }
 .booker .booker__tipologia input {
@@ -222,6 +310,18 @@
     height: 20px;
   }
 }
+@media (max-width: 768px) {
+  .booker .booker__tipologia input {
+    font-size: 9px;
+    height: 14px;
+  }
+}
+@media (max-width: 575px) {
+  .booker .booker__tipologia input {
+    font-size: 15px;
+    height: 20px;
+  }
+}
 .booker .booker__tipologia select {
   font-size: 15px;
   height: 35px;
@@ -242,6 +342,18 @@
 @media (max-width: 1024px) {
   .booker .booker__tipologia select {
     font-size: 12px;
+    height: 20px;
+  }
+}
+@media (max-width: 768px) {
+  .booker .booker__tipologia select {
+    font-size: 9px;
+    height: 14px;
+  }
+}
+@media (max-width: 575px) {
+  .booker .booker__tipologia select {
+    font-size: 15px;
     height: 20px;
   }
 }
@@ -274,6 +386,21 @@
     font-size: 16px;
   }
 }
+@media (max-width: 768px) {
+  .booker .booker__boton input {
+    width: 70px;
+    height: 25px;
+    font-size: 12px;
+  }
+}
+@media (max-width: 575px) {
+  .booker .booker__boton input {
+    width: 75px;
+    height: 35px;
+    font-size: 17px;
+    font-weight: bold;
+  }
+}
 
 /*--------------------------------------------*/
 .tarjetas {
@@ -293,6 +420,19 @@
   box-shadow: 0 0 12px #d7d7d7;
   display: flex;
 }
+@media (max-width: 768px) {
+  .tarjeta {
+    max-width: 650px;
+    height: 355px;
+  }
+}
+@media (max-width: 575px) {
+  .tarjeta {
+    max-width: 360px;
+    height: 640px;
+    flex-direction: column;
+  }
+}
 .tarjeta .tarjeta__header img {
   border-radius: 8px 0 0 8px;
   height: 360px;
@@ -306,6 +446,18 @@
   padding: 0 1rem;
   width: 390px;
 }
+@media (max-width: 768px) {
+  .tarjeta .tarjeta__footer {
+    width: 290px;
+    font-size: 15px;
+  }
+}
+@media (max-width: 575px) {
+  .tarjeta .tarjeta__footer {
+    width: 360px;
+    height: 280px;
+  }
+}
 .tarjeta .tarjeta__footer .tarjeta__textos {
   padding: 10px 0 0 0;
   margin: 0;
@@ -314,11 +466,21 @@
   font-size: 26px;
   margin: 0;
 }
+@media (max-width: 768px) {
+  .tarjeta .tarjeta__footer .tarjeta__textos h3 {
+    font-size: 19px;
+  }
+}
 .tarjeta .tarjeta__footer .tarjeta__textos p {
   padding-top: 10px;
   margin: 0;
   font-size: 16px;
   line-height: 23px;
+}
+@media (max-width: 768px) {
+  .tarjeta .tarjeta__footer .tarjeta__textos p {
+    font-size: 15px;
+  }
 }
 .tarjeta .tarjeta__footer .tarjeta__link {
   margin: 1rem 0;
@@ -355,6 +517,18 @@
     grid-template-rows: 350px;
   }
 }
+@media (max-width: 768px) {
+  .contenedorGrid {
+    grid-template-columns: repeat(2, 250px);
+    grid-template-rows: repeat(3, 250px);
+  }
+}
+@media (max-width: 575px) {
+  .contenedorGrid {
+    grid-template-columns: repeat(2, 150px);
+    grid-template-rows: repeat(3, 150px);
+  }
+}
 .contenedorGrid .contenedorGrid__imagen1 {
   grid-column: 1/2;
   grid-row: 1/2;
@@ -373,11 +547,23 @@
     grid-row: 2/3;
   }
 }
+@media (max-width: 768px) {
+  .contenedorGrid .contenedorGrid__imagen3 {
+    grid-column: 1/2;
+    grid-row: 2/3;
+  }
+}
 .contenedorGrid .contenedorGrid__imagen4 {
   grid-column: 1/2;
   grid-row: 2/3;
 }
 @media (max-width: 1200px) {
+  .contenedorGrid .contenedorGrid__imagen4 {
+    grid-column: 2/3;
+    grid-row: 2/3;
+  }
+}
+@media (max-width: 768px) {
   .contenedorGrid .contenedorGrid__imagen4 {
     grid-column: 2/3;
     grid-row: 2/3;
@@ -393,11 +579,23 @@
     grid-row: 3/4;
   }
 }
+@media (max-width: 768px) {
+  .contenedorGrid .contenedorGrid__imagen5 {
+    grid-column: 1/2;
+    grid-row: 3/4;
+  }
+}
 .contenedorGrid .contenedorGrid__imagen6 {
   grid-column: 3/4;
   grid-row: 2/3;
 }
 @media (max-width: 1200px) {
+  .contenedorGrid .contenedorGrid__imagen6 {
+    grid-column: 2/3;
+    grid-row: 3/4;
+  }
+}
+@media (max-width: 768px) {
   .contenedorGrid .contenedorGrid__imagen6 {
     grid-column: 2/3;
     grid-row: 3/4;
@@ -433,6 +631,20 @@
   height: 40px;
   text-align: center;
 }
+@media (max-width: 768px) {
+  .contenedorGrid--celda h3 {
+    font-size: 30px;
+    width: 220px;
+    height: 40px;
+  }
+}
+@media (max-width: 575px) {
+  .contenedorGrid--celda h3 {
+    font-size: 18px;
+    width: 138px;
+    height: 24px;
+  }
+}
 
 /*--------------------------------------------*/
 .bloqueMapaLogin {
@@ -454,6 +666,16 @@
     justify-content: space-around;
   }
 }
+@media (max-width: 768px) {
+  .bloqueMapaLogin .ubicacion {
+    justify-content: space-around;
+  }
+}
+@media (max-width: 575px) {
+  .bloqueMapaLogin .ubicacion {
+    flex-direction: column;
+  }
+}
 .bloqueMapaLogin .ubicacion .ubicacion__text {
   width: 450px;
   line-height: 25px;
@@ -468,9 +690,44 @@
     margin: 0;
   }
 }
+@media (max-width: 768px) {
+  .bloqueMapaLogin .ubicacion .ubicacion__text {
+    width: 300px;
+    font-size: 16px;
+  }
+}
+@media (max-width: 575px) {
+  .bloqueMapaLogin .ubicacion .ubicacion__text {
+    font-size: 16px;
+    text-align: center;
+    margin: 15px 0;
+  }
+}
 @media (max-width: 1024px) {
   .bloqueMapaLogin .ubicacion .ubicacion__text h3 {
     font-size: 20px;
+  }
+}
+@media (max-width: 768px) {
+  .bloqueMapaLogin .ubicacion .ubicacion__text h3 {
+    font-weight: bold;
+  }
+}
+@media (max-width: 575px) {
+  .bloqueMapaLogin .ubicacion .ubicacion__text h3 {
+    font-size: 18px;
+    margin-bottom: 3px;
+    line-height: 25px;
+  }
+}
+@media (max-width: 768px) {
+  .bloqueMapaLogin .ubicacion .ubicacion__text p {
+    margin-bottom: 8px;
+  }
+}
+@media (max-width: 575px) {
+  .bloqueMapaLogin .ubicacion .ubicacion__text p {
+    margin: 0;
   }
 }
 .bloqueMapaLogin .ubicacion iframe {
@@ -483,6 +740,18 @@
     width: 450px;
   }
 }
+@media (max-width: 768px) {
+  .bloqueMapaLogin .ubicacion iframe {
+    height: 250px;
+    width: 400px;
+  }
+}
+@media (max-width: 575px) {
+  .bloqueMapaLogin .ubicacion iframe {
+    height: 250px;
+    width: 350px;
+  }
+}
 .bloqueMapaLogin .registro {
   height: 250px;
   display: flex;
@@ -490,8 +759,33 @@
   align-items: center;
   justify-content: space-around;
 }
+@media (max-width: 575px) {
+  .bloqueMapaLogin .registro {
+    margin-top: 15px;
+  }
+}
 .bloqueMapaLogin .registro .registro__textos {
   text-align: center;
+}
+@media (max-width: 575px) {
+  .bloqueMapaLogin .registro .registro__textos {
+    text-align: center;
+    font-size: 16px;
+  }
+}
+@media (max-width: 575px) {
+  .bloqueMapaLogin .registro .registro__textos h3 {
+    margin: 0;
+    font-size: 20px;
+  }
+}
+@media (max-width: 575px) {
+  .bloqueMapaLogin .registro .registro__inputs {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    align-items: center;
+  }
 }
 .bloqueMapaLogin .registro .registro__inputs input {
   width: 250px;
@@ -546,6 +840,11 @@
   font-size: 30px;
   word-spacing: 10px;
 }
+@media (max-width: 575px) {
+  .bloqueMapaLogin .registro .registro__redes .registro__links {
+    margin: 0;
+  }
+}
 .bloqueMapaLogin .registro .registro__redes .registro__links a {
   color: white;
 }
@@ -576,12 +875,30 @@
     justify-content: space-between;
   }
 }
+@media (max-width: 575px) {
+  .foot {
+    flex-direction: column;
+    height: 300px;
+    justify-content: space-evenly;
+  }
+}
 .foot .foot__img {
   height: 150px;
+}
+@media (max-width: 575px) {
+  .foot .foot__img {
+    height: 100px;
+  }
 }
 .foot .foot__img img {
   width: 160px;
   height: 100px;
+}
+@media (max-width: 768px) {
+  .foot .foot__img img {
+    width: 130px;
+    height: 75px;
+  }
 }
 .foot .foot__contacto {
   display: flex;
@@ -590,9 +907,20 @@
   align-items: center;
   gap: 10px;
 }
+@media (max-width: 768px) {
+  .foot .foot__contacto {
+    gap: 4px;
+  }
+}
 .foot .foot__contacto span {
   font-size: 14px;
   font-weight: 900;
+}
+@media (max-width: 768px) {
+  .foot .foot__contacto span {
+    font-size: 13px;
+    font-weight: 900px;
+  }
 }
 .foot .foot__contacto .foot__boton {
   background-color: rgb(228, 132, 6);
@@ -609,8 +937,19 @@
   overflow: hidden;
   border: solid 3px rgb(228, 132, 6);
 }
+@media (max-width: 768px) {
+  .foot .foot__contacto .foot__boton {
+    height: 40px;
+    width: 130px;
+  }
+}
 .foot .foot__contacto .foot__boton span {
   z-index: 2;
+}
+@media (max-width: 768px) {
+  .foot .foot__contacto .foot__boton span {
+    font-size: 13px;
+  }
 }
 .foot .foot__contacto .foot__boton::after {
   content: "";
@@ -643,6 +982,17 @@
     width: 650px;
   }
 }
+@media (max-width: 768px) {
+  .foot .foot__grid {
+    width: 480px;
+    gap: 10px;
+  }
+}
+@media (max-width: 575px) {
+  .foot .foot__grid {
+    display: none;
+  }
+}
 .foot .foot__grid .foot__bloque1 {
   grid-column: 1/2;
 }
@@ -667,6 +1017,12 @@
     line-height: 25px;
   }
 }
+@media (max-width: 768px) {
+  .foot--bloques {
+    font-size: 12px;
+    line-height: 20px;
+  }
+}
 
 .foot--subtitulo {
   font-weight: bold;
@@ -675,6 +1031,11 @@
 @media (max-width: 1024px) {
   .foot--subtitulo {
     font-size: 16px;
+  }
+}
+@media (max-width: 768px) {
+  .foot--subtitulo {
+    font-size: 14px;
   }
 }
 
@@ -687,6 +1048,16 @@
 @media (max-width: 1024px) {
   .menu--modificador {
     height: 450px;
+  }
+}
+@media (max-width: 768px) {
+  .menu--modificador {
+    height: 450px;
+  }
+}
+@media (max-width: 575px) {
+  .menu--modificador {
+    height: 350px;
   }
 }
 
@@ -711,16 +1082,52 @@
     bottom: 160px;
   }
 }
+@media (max-width: 575px) {
+  .carousel-caption {
+    font-size: 12px;
+    bottom: 120px;
+  }
+}
+@media (max-width: 768px) {
+  .carousel-caption p {
+    display: none;
+  }
+}
+@media (max-width: 768px) {
+  .carousel-caption h5 {
+    display: none;
+  }
+}
 
 @media (max-width: 1200px) {
   .carousel-control-prev {
     bottom: 90px;
   }
 }
+@media (max-width: 768px) {
+  .carousel-control-prev {
+    bottom: 80px;
+  }
+}
+@media (max-width: 575px) {
+  .carousel-control-prev {
+    bottom: 20px;
+  }
+}
 
 @media (max-width: 1200px) {
   .carousel-control-next {
     bottom: 90px;
+  }
+}
+@media (max-width: 768px) {
+  .carousel-control-next {
+    bottom: 80px;
+  }
+}
+@media (max-width: 575px) {
+  .carousel-control-next {
+    bottom: 20px;
   }
 }
 
@@ -848,6 +1255,22 @@
     line-height: 28px;
   }
 }
+@media (max-width: 768px) {
+  .tarjetas_hotel .tarjetas_hotel__avisos .tarjetas_hotel__textos {
+    width: 400px;
+    height: 400px;
+    font-size: 14px;
+    line-height: 23px;
+  }
+}
+@media (max-width: 575px) {
+  .tarjetas_hotel .tarjetas_hotel__avisos .tarjetas_hotel__textos {
+    width: 320px;
+    height: 350px;
+    font-size: 10px;
+    line-height: 20px;
+  }
+}
 .tarjetas_hotel .tarjetas_hotel__avisos .tarjetas_hotel__textos h3 {
   margin-bottom: 15px;
   font-size: 45px;
@@ -868,6 +1291,16 @@
 @media (max-width: 1024px) {
   .tarjetas_hotel .tarjetas_hotel__avisos .tarjetas_hotel__textos h3 {
     font-size: 25px;
+  }
+}
+@media (max-width: 768px) {
+  .tarjetas_hotel .tarjetas_hotel__avisos .tarjetas_hotel__textos h3 {
+    font-size: 20px;
+  }
+}
+@media (max-width: 575px) {
+  .tarjetas_hotel .tarjetas_hotel__avisos .tarjetas_hotel__textos h3 {
+    font-size: 13px;
   }
 }
 .tarjetas_hotel .tarjetas_hotel__avisos img {
@@ -896,6 +1329,20 @@
     height: 450px;
   }
 }
+@media (max-width: 768px) {
+  .tarjetas_hotel .tarjetas_hotel__avisos img {
+    width: 400px;
+    height: 400px;
+    margin-bottom: 25px;
+  }
+}
+@media (max-width: 575px) {
+  .tarjetas_hotel .tarjetas_hotel__avisos img {
+    width: 300px;
+    height: 300px;
+    margin-bottom: 25px;
+  }
+}
 
 /*--------------------------------------------*/
 /*--------------------------------------------*/
@@ -922,6 +1369,12 @@
   .exp-cent h1 {
     height: 300px;
     font-size: 4em;
+  }
+}
+@media (max-width: 575px) {
+  .exp-cent h1 {
+    height: 200px;
+    font-size: 2em;
   }
 }
 
@@ -990,6 +1443,11 @@
     background-position-y: -200px;
   }
 }
+@media (max-width: 768px) {
+  .portada-registro {
+    background-position-y: -300px;
+  }
+}
 .portada-registro h1 {
   color: white;
   width: 100%;
@@ -1007,6 +1465,18 @@
     font-size: 4em;
   }
 }
+@media (max-width: 768px) {
+  .portada-registro h1 {
+    font-size: 3em;
+    height: 450px;
+  }
+}
+@media (max-width: 575px) {
+  .portada-registro h1 {
+    font-size: 2em;
+    height: 350px;
+  }
+}
 
 .registro-bloque-Pr {
   display: flex;
@@ -1018,6 +1488,18 @@
   .registro-bloque-Pr {
     width: 100%;
     justify-content: space-around;
+  }
+}
+@media (max-width: 768px) {
+  .registro-bloque-Pr {
+    flex-direction: column;
+    align-items: center;
+  }
+}
+@media (max-width: 575px) {
+  .registro-bloque-Pr {
+    flex-direction: column;
+    align-items: center;
   }
 }
 .registro-bloque-Pr .registro__pag-textos {
@@ -1041,12 +1523,41 @@
     margin-right: 0;
   }
 }
+@media (max-width: 768px) {
+  .registro-bloque-Pr .registro__pag-textos {
+    margin-right: 0;
+    margin-bottom: 25px;
+  }
+}
+@media (max-width: 575px) {
+  .registro-bloque-Pr .registro__pag-textos {
+    width: 360px;
+    margin-right: 0;
+    margin-bottom: 25px;
+  }
+}
+@media (max-width: 575px) {
+  .registro-bloque-Pr .registro__pag-textos span {
+    font-size: 15px;
+  }
+}
 .registro-bloque-Pr .registro__pag-textos h3 {
   font-family: "Playfair Display", serif;
   font-size: 40px;
   margin: 20px 0;
   color: rgb(228, 132, 6);
   font-weight: bold;
+}
+@media (max-width: 575px) {
+  .registro-bloque-Pr .registro__pag-textos h3 {
+    font-size: 25px;
+  }
+}
+@media (max-width: 575px) {
+  .registro-bloque-Pr .registro__pag-textos p {
+    font-size: 15px;
+    line-height: 25px;
+  }
 }
 .registro-bloque-Pr .formulario {
   width: 400px;
@@ -1120,6 +1631,18 @@
     height: 350px;
   }
 }
+@media (max-width: 768px) {
+  .portada-conocenos h1 {
+    height: 350px;
+    font-size: 75px;
+  }
+}
+@media (max-width: 575px) {
+  .portada-conocenos h1 {
+    height: 250px;
+    font-size: 60px;
+  }
+}
 
 .tarjetas-conocenos {
   width: 100%;
@@ -1145,6 +1668,11 @@
     height: auto;
   }
 }
+@media (max-width: 768px) {
+  .tarjetas-conocenos .tarjetas-conocenos__card1 {
+    flex-direction: column;
+  }
+}
 .tarjetas-conocenos .tarjetas-conocenos__card1 .tarjetas-conocenos__card__header img {
   border-radius: 8px 0 0 8px;
   height: 500px;
@@ -1154,6 +1682,19 @@
   .tarjetas-conocenos .tarjetas-conocenos__card1 .tarjetas-conocenos__card__header img {
     height: 450px;
     width: 500px;
+  }
+}
+@media (max-width: 768px) {
+  .tarjetas-conocenos .tarjetas-conocenos__card1 .tarjetas-conocenos__card__header img {
+    height: 450px;
+    width: 350px;
+    border-radius: 8px 8px 0 0;
+  }
+}
+@media (max-width: 575px) {
+  .tarjetas-conocenos .tarjetas-conocenos__card1 .tarjetas-conocenos__card__header img {
+    height: 350px;
+    width: 420px;
   }
 }
 .tarjetas-conocenos .tarjetas-conocenos__card1 .tarjeta__conocenos__card__footer {
@@ -1171,6 +1712,11 @@
     padding: 0;
   }
 }
+@media (max-width: 575px) {
+  .tarjetas-conocenos .tarjetas-conocenos__card1 .tarjeta__conocenos__card__footer {
+    width: auto;
+  }
+}
 .tarjetas-conocenos .tarjetas-conocenos__card1 .tarjeta__conocenos__card__footer h3 {
   font-size: 40px;
   margin: 0;
@@ -1179,6 +1725,16 @@
 @media (max-width: 1024px) {
   .tarjetas-conocenos .tarjetas-conocenos__card1 .tarjeta__conocenos__card__footer h3 {
     font-size: 36px;
+  }
+}
+@media (max-width: 768px) {
+  .tarjetas-conocenos .tarjetas-conocenos__card1 .tarjeta__conocenos__card__footer h3 {
+    font-size: 30px;
+  }
+}
+@media (max-width: 575px) {
+  .tarjetas-conocenos .tarjetas-conocenos__card1 .tarjeta__conocenos__card__footer h3 {
+    font-size: 21px;
   }
 }
 .tarjetas-conocenos .tarjetas-conocenos__card1 .tarjeta__conocenos__card__footer p {
@@ -1198,6 +1754,20 @@
     text-align: center;
   }
 }
+@media (max-width: 768px) {
+  .tarjetas-conocenos .tarjetas-conocenos__card1 .tarjeta__conocenos__card__footer p {
+    width: 524px;
+    padding: 10px;
+    font-size: 16px;
+  }
+}
+@media (max-width: 575px) {
+  .tarjetas-conocenos .tarjetas-conocenos__card1 .tarjeta__conocenos__card__footer p {
+    width: 420px;
+    padding: 10px;
+    font-size: 16px;
+  }
+}
 .tarjetas-conocenos .tarjetas-conocenos__card2 {
   width: 1200px;
   height: 500px;
@@ -1210,6 +1780,11 @@
   .tarjetas-conocenos .tarjetas-conocenos__card2 {
     width: auto;
     height: auto;
+  }
+}
+@media (max-width: 768px) {
+  .tarjetas-conocenos .tarjetas-conocenos__card2 {
+    flex-direction: column;
   }
 }
 .tarjetas-conocenos .tarjetas-conocenos__card2 .tarjeta__conocenos__card__footer {
@@ -1227,6 +1802,11 @@
     padding: 0;
   }
 }
+@media (max-width: 575px) {
+  .tarjetas-conocenos .tarjetas-conocenos__card2 .tarjeta__conocenos__card__footer {
+    width: auto;
+  }
+}
 .tarjetas-conocenos .tarjetas-conocenos__card2 .tarjeta__conocenos__card__footer h3 {
   font-size: 40px;
   margin: 0;
@@ -1235,6 +1815,16 @@
 @media (max-width: 1024px) {
   .tarjetas-conocenos .tarjetas-conocenos__card2 .tarjeta__conocenos__card__footer h3 {
     font-size: 36px;
+  }
+}
+@media (max-width: 768px) {
+  .tarjetas-conocenos .tarjetas-conocenos__card2 .tarjeta__conocenos__card__footer h3 {
+    font-size: 30px;
+  }
+}
+@media (max-width: 575px) {
+  .tarjetas-conocenos .tarjetas-conocenos__card2 .tarjeta__conocenos__card__footer h3 {
+    font-size: 21px;
   }
 }
 .tarjetas-conocenos .tarjetas-conocenos__card2 .tarjeta__conocenos__card__footer p {
@@ -1254,6 +1844,20 @@
     text-align: center;
   }
 }
+@media (max-width: 768px) {
+  .tarjetas-conocenos .tarjetas-conocenos__card2 .tarjeta__conocenos__card__footer p {
+    width: 524px;
+    padding: 10px;
+    font-size: 16px;
+  }
+}
+@media (max-width: 575px) {
+  .tarjetas-conocenos .tarjetas-conocenos__card2 .tarjeta__conocenos__card__footer p {
+    width: 420px;
+    padding: 10px;
+    font-size: 16px;
+  }
+}
 .tarjetas-conocenos .tarjetas-conocenos__card2 .tarjetas-conocenos__card__header img {
   border-radius: 8px 0 0 8px;
   height: 500px;
@@ -1265,422 +1869,25 @@
     width: 500px;
   }
 }
-.tarjetas-conocenos .tarjetas-conocenos__card2 .card--img--modificadora img {
-  border-radius: 0 8px 8px 0;
-}
-
 @media (max-width: 768px) {
-  .menu__links .menu__Hamb {
-    display: block;
-    order: -1;
-    margin: 15px;
-  }
-  .menu__links .menu__Hamb:hover + ul {
-    left: 0px;
-  }
-  .menu__links ul:hover {
-    left: 0px;
-  }
-  .menu__links ul {
-    position: fixed;
-    top: 0;
-    left: -55vw;
-    background-color: white;
-    flex-direction: column;
-    align-items: start;
-    padding: 10px;
-    width: 55vw;
-    height: 100vw;
-    transition: 0.5s;
-    border: solid black 1px;
-  }
-  .menu__links ul li a {
-    color: black;
-  }
-  .booker {
-    left: 60px;
-    height: 37px;
-    bottom: 18px;
-  }
-  .booker__tipologia {
-    font-size: 10px;
-    text-align: center;
-  }
-  .booker__tipologia input, .booker__tipologia select {
-    font-size: 9px;
-    height: 14px;
-  }
-  .booker__boton input {
-    width: 70px;
-    height: 25px;
-    font-size: 12px;
-  }
-  .tarjeta {
-    max-width: 650px;
-    height: 355px;
-  }
-  .tarjeta__footer {
-    width: 290px;
-    font-size: 15px;
-  }
-  .tarjeta__textos h3 {
-    font-size: 19px;
-  }
-  .tarjeta__textos p {
-    font-size: 15px;
-  }
-  .contenedorGrid--celda h3 {
-    font-size: 30px;
-    width: 220px;
-    height: 40px;
-  }
-  .contenedorGrid {
-    grid-template-columns: repeat(2, 250px);
-    grid-template-rows: repeat(3, 250px);
-  }
-  .contenedorGrid__imagen1 {
-    grid-column: 1/2;
-    grid-row: 1/2;
-  }
-  .contenedorGrid__imagen2 {
-    grid-column: 2/3;
-    grid-row: 1/2;
-  }
-  .contenedorGrid__imagen3 {
-    grid-column: 1/2;
-    grid-row: 2/3;
-  }
-  .contenedorGrid__imagen4 {
-    grid-column: 2/3;
-    grid-row: 2/3;
-  }
-  .contenedorGrid__imagen5 {
-    grid-column: 1/2;
-    grid-row: 3/4;
-  }
-  .contenedorGrid__imagen6 {
-    grid-column: 2/3;
-    grid-row: 3/4;
-  }
-  .ubicacion {
-    justify-content: space-around;
-  }
-  .ubicacion__text {
-    width: 300px;
-    font-size: 16px;
-  }
-  .ubicacion__text p {
-    margin-bottom: 8px;
-  }
-  .ubicacion__text h3 {
-    font-weight: bold;
-  }
-  .ubicacion iframe {
-    height: 250px;
-    width: 400px;
-  }
-  .foot__img img {
-    width: 130px;
-    height: 75px;
-  }
-  .foot__contacto {
-    gap: 4px;
-  }
-  .foot__contacto span {
-    font-size: 13px;
-    font-weight: 900;
-  }
-  .foot__boton {
-    height: 40px;
-    width: 130px;
-  }
-  .foot__boton span {
-    font-size: 13px;
-  }
-  .foot__grid {
-    width: 480px;
-    gap: 10px;
-  }
-  .foot--bloques {
-    font-size: 12px;
-    line-height: 20px;
-  }
-  .foot--subtitulo {
-    font-size: 14px;
-  }
-  /*---------------------------------*/
-  /*---------------------------------*/
-  /*---------1.Hotel-----------*/
-  .menu--modificador {
+  .tarjetas-conocenos .tarjetas-conocenos__card2 .tarjetas-conocenos__card__header img {
     height: 450px;
-  }
-  .carousel-caption p {
-    display: none;
-  }
-  .carousel-caption h5 {
-    display: none;
-  }
-  .carousel-control-prev {
-    bottom: 80px;
-  }
-  .carousel-control-next {
-    bottom: 80px;
-  }
-  .tarjetas_hotel__avisos img {
-    width: 400px;
-    height: 400px;
-    margin-bottom: 25px;
-  }
-  .tarjetas_hotel__textos {
-    width: 400px;
-    height: 400px;
-    font-size: 14px;
-    line-height: 23px;
-  }
-  .tarjetas_hotel__textos h3 {
-    font-size: 20px;
-  }
-  /*---------------------------------*/
-  /*---------------------------------*/
-  /*---------3.Registro-----------*/
-  .portada-registro h1 {
-    font-size: 3em;
-    height: 450px;
-  }
-  .portada-registro {
-    background-position-y: -300px;
-  }
-  .registro-bloque-Pr {
-    flex-direction: column;
-    align-items: center;
-  }
-  .registro__pag-textos {
-    margin-right: 0;
-    margin-bottom: 25px;
-  }
-  /*---------------------------------*/
-  /*---------------------------------*/
-  /*---------4.Conocenos-----------*/
-  .portada-conocenos h1 {
-    height: 350px;
-    font-size: 75px;
-  }
-  .tarjetas-conocenos__card1 {
-    flex-direction: column;
-  }
-  .tarjetas-conocenos__card2 {
-    flex-direction: column;
-  }
-  .tarjetas-conocenos__card__header img {
-    height: 450px;
-    width: 530px;
+    width: 350px;
     border-radius: 8px 8px 0 0;
-  }
-  .card--img--modificadora img {
-    border-radius: 0 0 8px 8px;
-  }
-  .tarjeta__conocenos__card__footer h3 {
-    font-size: 30px;
-  }
-  .tarjeta__conocenos__card__footer p {
-    width: 524px;
-    padding: 10px;
-    font-size: 16px;
   }
 }
 @media (max-width: 575px) {
-  .memenu__links img {
-    width: 80px;
-    height: 50px;
-    margin: 0;
-  }
-  .menu__links .menu__Hamb {
-    font-size: 30px;
-  }
-  .video-portada {
-    margin-top: 60px;
-  }
-  .position575 {
-    display: flex;
-    justify-content: center;
-  }
-  .booker {
-    position: static;
-    width: 350px;
-    height: 220px;
-    flex-direction: column;
-    justify-content: space-around;
-    border-radius: 18px;
-    margin-top: 10px;
-  }
-  .booker__tipologia {
-    display: flex;
-    flex-direction: column;
-    font-size: 20px;
-  }
-  .booker__tipologia input, .booker__tipologia select {
-    font-size: 15px;
-    height: 20px;
-  }
-  .booker__boton input {
-    width: 75px;
-    height: 35px;
-    font-size: 17px;
-    font-weight: bold;
-  }
-  .tarjeta {
-    max-width: 360px;
-    height: 640px;
-    flex-direction: column;
-  }
-  .tarjeta__footer {
-    width: 360px;
-    height: 280px;
-  }
-  .contenedorGrid--celda h3 {
-    font-size: 18px;
-    width: 138px;
-    height: 24px;
-  }
-  .contenedorGrid {
-    grid-template-columns: repeat(2, 150px);
-    grid-template-rows: repeat(3, 150px);
-  }
-  .ubicacion {
-    flex-direction: column;
-  }
-  .ubicacion__text {
-    font-size: 16px;
-    text-align: center;
-    margin: 15px 0;
-  }
-  .ubicacion__text p {
-    margin: 0;
-  }
-  .ubicacion__text h3 {
-    font-size: 18px;
-    margin-bottom: 3px;
-    line-height: 25px;
-  }
-  .ubicacion iframe {
-    height: 250px;
-    width: 350px;
-  }
-  .registro {
-    margin-top: 15px;
-  }
-  .registro__inputs {
-    display: flex;
-    flex-direction: column;
-    gap: 10px;
-    align-items: center;
-  }
-  .registro__textos {
-    text-align: center;
-    font-size: 16px;
-  }
-  .registro__textos h3 {
-    margin: 0;
-    font-size: 20px;
-  }
-  .registro__links {
-    margin: 0;
-  }
-  .foot {
-    flex-direction: column;
-    height: 300px;
-    justify-content: space-evenly;
-  }
-  .foot__img {
-    height: 100px;
-  }
-  .foot__grid {
-    display: none;
-  }
-  /*---------------------------------*/
-  /*---------------------------------*/
-  /*---------1.Hotel-----------*/
-  .menu--modificador {
-    height: 350px;
-  }
-  .carousel-caption {
-    font-size: 12px;
-    bottom: 120px;
-  }
-  .carousel-control-prev {
-    bottom: 20px;
-  }
-  .carousel-control-next {
-    bottom: 20px;
-  }
-  .tarjetas_hotel__avisos img {
-    width: 300px;
-    height: 300px;
-    margin-bottom: 25px;
-  }
-  .tarjetas_hotel__textos {
-    width: 320px;
-    height: 350px;
-    font-size: 10px;
-    line-height: 20px;
-  }
-  .tarjetas_hotel__textos h3 {
-    font-size: 13px;
-  }
-  /*---------------------------------*/
-  /*---------------------------------*/
-  /*---------2.Exp Cent-----------*/
-  .exp-cent h1 {
-    height: 200px;
-    font-size: 2em;
-  }
-  /*---------------------------------*/
-  /*---------------------------------*/
-  /*---------3.Registro-----------*/
-  .portada-registro h1 {
-    font-size: 2em;
-    height: 350px;
-  }
-  .registro-bloque-Pr {
-    flex-direction: column;
-    align-items: center;
-  }
-  .registro__pag-textos {
-    width: 360px;
-    margin-right: 0;
-    margin-bottom: 25px;
-  }
-  .registro__pag-textos p {
-    font-size: 15px;
-    line-height: 25px;
-  }
-  .registro__pag-textos span {
-    font-size: 15px;
-  }
-  .registro__pag-textos h3 {
-    font-size: 25px;
-  }
-  /*---------------------------------*/
-  /*---------------------------------*/
-  /*---------4.Conocenos-----------*/
-  .portada-conocenos h1 {
-    height: 250px;
-    font-size: 60px;
-  }
-  .tarjetas-conocenos__card__header img {
+  .tarjetas-conocenos .tarjetas-conocenos__card2 .tarjetas-conocenos__card__header img {
     height: 350px;
     width: 420px;
   }
-  .tarjeta__conocenos__card__footer {
-    width: auto;
-  }
-  .tarjeta__conocenos__card__footer h3 {
-    font-size: 21px;
-  }
-  .tarjeta__conocenos__card__footer p {
-    width: 420px;
-    padding: 10px;
-    font-size: 16px;
+}
+.tarjetas-conocenos .tarjetas-conocenos__card2 .card--img--modificadora img {
+  border-radius: 0 8px 8px 0;
+}
+@media (max-width: 768px) {
+  .tarjetas-conocenos .tarjetas-conocenos__card2 .card--img--modificadora img {
+    border-radius: 0 0 8px 8px;
   }
 }
 
