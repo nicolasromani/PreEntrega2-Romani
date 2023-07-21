@@ -1018,6 +1018,7 @@
 }
 .menu .video-portada {
   margin-top: 74px;
+  font-size: 30px;
 }
 @media (max-width: 575px) {
   .menu .video-portada {
@@ -1030,50 +1031,40 @@
 .menu .video-portada h1 {
   position: absolute;
   color: white;
-  font-size: 4em;
+  font-size: 300%;
   text-align: center;
   top: 250px;
-  left: 50px;
   margin: 0;
   font-weight: 400;
   text-shadow: 3px 5px 2px #474747, 32px 20px 9px rgba(255, 255, 255, 0.23);
   color: #FFFFFF;
 }
-@media (max-width: 1900px) {
-  .menu .video-portada h1 {
-    left: 8%;
-    font-size: 3.5em;
-  }
-}
 @media (max-width: 1440px) {
   .menu .video-portada h1 {
-    left: 1%;
+    font-size: 240%;
   }
 }
 @media (max-width: 1200px) {
   .menu .video-portada h1 {
-    font-size: 3em;
+    font-size: 210%;
     top: 190px;
-    left: 5px;
   }
 }
 @media (max-width: 1024px) {
   .menu .video-portada h1 {
-    font-size: 2.5em;
+    font-size: 180%;
     top: 150px;
-    left: 0;
   }
 }
 @media (max-width: 768px) {
   .menu .video-portada h1 {
-    font-size: 2em;
+    font-size: 140%;
   }
 }
 @media (max-width: 575px) {
   .menu .video-portada h1 {
-    font-size: 1.5em;
+    font-size: 90%;
     top: 120px;
-    left: 0;
   }
 }
 
@@ -1095,31 +1086,41 @@
 }
 
 .tarjeta {
-  max-width: 750px;
+  width: 750px;
   height: 360px;
   background-color: #f8f8f8;
   border-radius: 8px;
   margin: 1rem;
   box-shadow: 0 0 12px #d7d7d7;
   display: flex;
+  overflow: hidden;
 }
 @media (max-width: 768px) {
   .tarjeta {
-    max-width: 650px;
+    width: 650px;
     height: 355px;
   }
 }
 @media (max-width: 575px) {
   .tarjeta {
-    max-width: 360px;
+    width: 360px;
     height: 640px;
     flex-direction: column;
   }
 }
-.tarjeta .tarjeta__header img {
-  border-radius: 8px 0 0 8px;
+.tarjeta .tarjeta__header {
   height: 360px;
   width: 360px;
+}
+.tarjeta .tarjeta__header img {
+  border-radius: 8px 0 0 8px;
+  max-width: 100%;
+  height: auto;
+}
+@media (max-width: 575px) {
+  .tarjeta .tarjeta__header img {
+    border-radius: 8px 8px 0 0;
+  }
 }
 .tarjeta .tarjeta__footer {
   display: flex;
@@ -1144,25 +1145,26 @@
 .tarjeta .tarjeta__footer .tarjeta__textos {
   padding: 10px 0 0 0;
   margin: 0;
+  font-size: 30px;
 }
 .tarjeta .tarjeta__footer .tarjeta__textos h3 {
-  font-size: 26px;
+  font-size: 90%;
   margin: 0;
 }
 @media (max-width: 768px) {
   .tarjeta .tarjeta__footer .tarjeta__textos h3 {
-    font-size: 19px;
+    font-size: 70%;
   }
 }
 .tarjeta .tarjeta__footer .tarjeta__textos p {
   padding-top: 10px;
   margin: 0;
-  font-size: 16px;
+  font-size: 60%;
   line-height: 23px;
 }
 @media (max-width: 768px) {
   .tarjeta .tarjeta__footer .tarjeta__textos p {
-    font-size: 15px;
+    font-size: 50%;
   }
 }
 .tarjeta .tarjeta__footer .tarjeta__link {
