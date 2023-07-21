@@ -5,9 +5,11 @@
 @import "NavBar";
 @import "MenuHamb";
 @import "booker";
+@import "tarjetas-index";
 @import "grillaGrid";
 @import "Ubic-Regist";
 @import "footer";
+@import "carusel-edit";
 @import "bloque-regist";
 @import "form-regist";
 
@@ -82,168 +84,26 @@
         justify-content: center;
     }
 }
-/*--------------------------------------------*/
-.tarjetas {
-    margin: 3rem 0;
-    display: flex;
-    flex-flow: wrap;
-    justify-content: space-around;
-    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
-}
-.tarjeta {
-    width: 750px;
-    height: 360px;
-    background-color: #f8f8f8;
-    border-radius: 8px;
-    margin: 1rem;
-    box-shadow: 0 0 12px #d7d7d7;
-    display: flex;
-    overflow: hidden;
-    @media (max-width:768px){
-        width: 650px;
-        height: 355px;
-    }
-    @media (max-width:575px){
-        width: 360px;
-        height: 640px;
-        flex-direction: column;
-    }
-    .tarjeta__header {
-        height: 360px;
-        width: 360px;
-        img {
-            border-radius: 8px 0 0 8px;
-            max-width: 100%;
-            height: auto;
-            @media (max-width:575px){
-                border-radius: 8px 8px 0 0;
-            }
-        }
-    }
-    .tarjeta__footer{
-        display: flex;
-        flex-direction: column;
-        align-items: end;
-        justify-content: space-between;
-        padding: 0 1rem;
-        width: 390px;
-        @media (max-width:768px){
-            width: 290px;
-            font-size: 15px;
-        }
-        @media (max-width:575px){
-            width: 360px;
-            height: 280px;
-        }
-        .tarjeta__textos {
-            padding: 10px 0 0 0;
-            margin: 0;
-            font-size: 30px;
-            h3 {
-                font-size: 90%;
-                margin: 0;
-                @media (max-width:768px){
-                    font-size: 70%;
-                }
-            }
-            p {
-                padding-top: 10px;
-                margin: 0;
-                font-size: 60%;
-                line-height: 23px;
-                @media (max-width:768px){
-                    font-size: 50%;
-                }
-            }
-        }
-        .tarjeta__link {
-            margin: 1rem 0;
-            span {
-                background-color: rgb(228, 132, 6);
-                color:black;
-                font-weight: 500;
-                padding: .2rem .5rem;
-                border-radius: 4px;
-                margin-bottom: 4px;
-            }
-        }
-    }
-}
-/*--------------------------------------------*/
-.grilla {
-    width: 100%;
-    height: auto;
-    margin-top: 40px;
-    display: flex;
-    justify-content: center;
-    align-items: center; 
-    font-family: 'Times New Roman', Times, serif;
-}
+
 /*------1.hotel--------*/
 .menu--modificador {
     height: 624px;
     @media (max-width:1024px){
         height: 450px;
     }
-    @media (max-width:768px){
-        height: 450px;
-    }
     @media (max-width:575px){
         height: 350px;
     }
 }
-.d-block {
-    margin-top: 74px;
-    max-height:550px;
-    object-fit: cover;
-}
-.carousel-caption {
-    font-size: 35px;
-    @media (max-width:1200px){
-        font-size: 20px;
-        bottom: 100px;
-    }
-    @media (max-width:1024px){
-        font-size: 17px;
-        bottom: 160px;
-    }
-    @media (max-width:575px){
-        font-size: 12px;
-        bottom: 120px;
-    }
-    p {
-        @media (max-width:768px){
-            display: none;
-        }
-    }
-    h5 {
-        @media (max-width:768px){
-            display: none;
-        }
-    }
-}
-.carousel-control-prev {
-    @media (max-width:1200px){
-        bottom: 90px;
-    }
-    @media (max-width:768px){
-        bottom: 80px;
-    }
-    @media (max-width:575px){
-        bottom: 20px;
-    }
-}
-.carousel-control-next {
-    @media (max-width:1200px){
-        bottom: 90px;
-    }
-    @media (max-width:768px){
-        bottom: 80px;
-    }
-    @media (max-width:575px){
-        bottom: 20px;
-    }
-}
+
+
+
+
+
+
+
+
+
 .tarjetas_hotel {
     background-color: #d8d6d6;
     height: auto;
