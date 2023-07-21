@@ -961,24 +961,29 @@
 .carousel .carousel-inner .carousel-item .carousel-caption h5 {
   font-size: 100%;
 }
+@media (max-width: 1440px) {
+  .carousel .carousel-inner .carousel-item .carousel-caption h5 {
+    font-size: 87%;
+  }
+}
 @media (max-width: 1200px) {
   .carousel .carousel-inner .carousel-item .carousel-caption h5 {
-    font-size: 90%;
+    font-size: 73%;
   }
 }
 @media (max-width: 1024px) {
   .carousel .carousel-inner .carousel-item .carousel-caption h5 {
-    font-size: 80%;
+    font-size: 62%;
   }
 }
 @media (max-width: 768px) {
   .carousel .carousel-inner .carousel-item .carousel-caption h5 {
-    font-size: 60%;
+    font-size: 46%;
   }
 }
 @media (max-width: 575px) {
   .carousel .carousel-inner .carousel-item .carousel-caption h5 {
-    font-size: 50%;
+    font-size: 35%;
   }
 }
 .carousel .carousel-inner .carousel-item .carousel-caption p {
@@ -986,17 +991,17 @@
 }
 @media (max-width: 1200px) {
   .carousel .carousel-inner .carousel-item .carousel-caption p {
-    font-size: 70%;
+    font-size: 68%;
   }
 }
 @media (max-width: 1024px) {
   .carousel .carousel-inner .carousel-item .carousel-caption p {
-    font-size: 60%;
+    font-size: 56%;
   }
 }
 @media (max-width: 768px) {
   .carousel .carousel-inner .carousel-item .carousel-caption p {
-    font-size: 40%;
+    font-size: 38%;
   }
 }
 @media (max-width: 575px) {
