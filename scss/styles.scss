@@ -206,27 +206,60 @@
 /*------2.Exp Cent--------*/
 .exp-cent {
     margin-top: 74px;
+    width: 100%;
     height: 550px;
-    background-image: url(../multimedia/img/carrusel1.jpeg);
-    background-position-y: -150px;
+    position: relative;
+    font-size: 100px;
     h1 {
+        position: absolute;
         color:white;
         width: 100%;
-        height: 550px;
-        font-size: 6em;
+        height: 676px;
+        font-size: 100%;
         display: inline-flex;
         justify-content: center;
         align-items: center;
         font-weight: 900;
         text-shadow: 3px 5px 2px #474747, 32px 20px 9px rgba(255,255,255,0.23);
         color: #FFFFFF;
+        @media (max-width:1440px){
+            height: 506px;
+            font-size: 90%;
+        }
+        @media (max-width:1200px){
+            height: 426px;
+            font-size: 80%;
+        }
         @media (max-width:1024px){
-            height: 300px;
-            font-size: 4em;
+            height: 326px;
+            font-size: 70%;
+        }
+        @media (max-width:768px){
+            height: 246px;
+            font-size: 55%;
         }
         @media (max-width:575px){
-            height: 200px;
-            font-size: 2em;
+            height: 176px;
+            font-size: 45%;
+        }
+    }
+    img {
+        width: 100%;
+        height: 676px;
+        @media (max-width:1440px){
+            height: 506px;
+        }
+        @media (max-width:1200px){
+            height: 426px;
+        }
+        @media (max-width:1024px){
+            height: 326px;
+        }
+        @media (max-width:768px){
+            height: 246px;
+        }
+        @media (max-width:575px){
+            height: 176px;
         }
     }
 }
@@ -282,7 +315,7 @@
 .portada-registro {
     margin-top: 74px;
     height: 550px;
-    background-image: url(../multimedia/img/carrusel1.jpeg);
+    background-image: url(../multimedia/img/carusel1.jpg);
     background-attachment: fixed;
     background-position-y: -150px;
     @media (max-width:1024px){
@@ -386,7 +419,7 @@
 .portada-conocenos {
     margin-top: 74px;
     height: 550px;
-    background-image: url(../multimedia/img/carrusel1.jpeg);
+    background-image: url(../multimedia/img/carusel1.jpg);
     background-position-y: -200px;
     h1 {
         color:white;
