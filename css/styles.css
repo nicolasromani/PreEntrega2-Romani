@@ -1600,144 +1600,44 @@
 
 /*------1.hotel--------*/
 .tarjetas_hotel {
-  background-color: #d8d6d6;
   height: auto;
   width: 100%;
-  margin-top: 40px;
+  margin-top: 80px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 }
-.tarjetas_hotel .tarjetas_hotel__avisos {
-  width: 100%;
+.tarjetas_hotel .tarjetas_hotel__avisos1 {
+  width: 1500px;
   height: auto;
   display: flex;
-  justify-content: space-around;
-  align-items: center;
-  flex-wrap: wrap;
+  flex-direction: column;
+  margin-bottom: 50px;
 }
-.tarjetas_hotel .tarjetas_hotel__avisos .tarjetas_hotel__textos {
-  width: 850px;
-  padding: 15px;
-  height: 850px;
-  font-size: 25px;
-  line-height: 40px;
-  text-align: center;
+.tarjetas_hotel .tarjetas_hotel__avisos1 .tarjetas_hotel__textos {
+  width: 100%;
+  height: auto;
+  line-height: 30px;
   font-family: "Montserrat", sans-serif;
   display: flex;
   flex-direction: column;
-  justify-content: center;
+  text-align: start;
 }
-@media (max-width: 1400px) {
-  .tarjetas_hotel .tarjetas_hotel__avisos .tarjetas_hotel__textos {
-    width: 650px;
-    height: 650px;
-    font-size: 20px;
-    line-height: 35px;
-  }
-}
-@media (max-width: 1200px) {
-  .tarjetas_hotel .tarjetas_hotel__avisos .tarjetas_hotel__textos {
-    width: 550px;
-    height: 550px;
-    font-size: 18px;
-    line-height: 30px;
-  }
-}
-@media (max-width: 1024px) {
-  .tarjetas_hotel .tarjetas_hotel__avisos .tarjetas_hotel__textos {
-    width: 500px;
-    height: 500px;
-    font-size: 17px;
-    line-height: 28px;
-  }
-}
-@media (max-width: 768px) {
-  .tarjetas_hotel .tarjetas_hotel__avisos .tarjetas_hotel__textos {
-    width: 400px;
-    height: 400px;
-    font-size: 14px;
-    line-height: 23px;
-  }
-}
-@media (max-width: 575px) {
-  .tarjetas_hotel .tarjetas_hotel__avisos .tarjetas_hotel__textos {
-    width: 320px;
-    height: 350px;
-    font-size: 10px;
-    line-height: 20px;
-  }
-}
-.tarjetas_hotel .tarjetas_hotel__avisos .tarjetas_hotel__textos h3 {
-  margin-bottom: 15px;
-  font-size: 45px;
+.tarjetas_hotel .tarjetas_hotel__avisos1 .tarjetas_hotel__textos h3 {
+  font-size: 25px;
   font-family: "Playfair Display", serif;
   font-weight: 800;
-  text-decoration: underline;
+  margin-bottom: 10px;
 }
-@media (max-width: 1400px) {
-  .tarjetas_hotel .tarjetas_hotel__avisos .tarjetas_hotel__textos h3 {
-    font-size: 35px;
-  }
+.tarjetas_hotel .tarjetas_hotel__avisos1 .tarjetas_hotel__textos p {
+  margin-bottom: 20px;
+  font-size: 18px;
 }
-@media (max-width: 1200px) {
-  .tarjetas_hotel .tarjetas_hotel__avisos .tarjetas_hotel__textos h3 {
-    font-size: 28px;
-  }
-}
-@media (max-width: 1024px) {
-  .tarjetas_hotel .tarjetas_hotel__avisos .tarjetas_hotel__textos h3 {
-    font-size: 25px;
-  }
-}
-@media (max-width: 768px) {
-  .tarjetas_hotel .tarjetas_hotel__avisos .tarjetas_hotel__textos h3 {
-    font-size: 20px;
-  }
-}
-@media (max-width: 575px) {
-  .tarjetas_hotel .tarjetas_hotel__avisos .tarjetas_hotel__textos h3 {
-    font-size: 13px;
-  }
-}
-.tarjetas_hotel .tarjetas_hotel__avisos img {
-  border-radius: 20px;
-  width: 700px;
+.tarjetas_hotel .tarjetas_hotel__avisos1 img {
+  max-width: 100%;
   height: 700px;
-  -webkit-box-shadow: 2px 5px 16px 0px #414346, 38px 7px 12px -3px rgba(0, 0, 0, 0);
-  box-shadow: 2px 5px 16px 0px #303233, 38px 7px 12px -3px rgba(0, 0, 0, 0);
-  background: #1C6EA4;
+  box-shadow: 0px 10px 13px -7px #000000, 0px 13px 10px 5px rgba(0, 0, 0, 0.15);
 }
-@media (max-width: 1400px) {
-  .tarjetas_hotel .tarjetas_hotel__avisos img {
-    width: 600px;
-    height: 600px;
-  }
-}
-@media (max-width: 1200px) {
-  .tarjetas_hotel .tarjetas_hotel__avisos img {
-    width: 500px;
-    height: 500px;
-  }
-}
-@media (max-width: 1024px) {
-  .tarjetas_hotel .tarjetas_hotel__avisos img {
-    width: 450px;
-    height: 450px;
-  }
-}
-@media (max-width: 768px) {
-  .tarjetas_hotel .tarjetas_hotel__avisos img {
-    width: 400px;
-    height: 400px;
-    margin-bottom: 25px;
-  }
-}
-@media (max-width: 575px) {
-  .tarjetas_hotel .tarjetas_hotel__avisos img {
-    width: 300px;
-    height: 300px;
-    margin-bottom: 25px;
-  }
-}
-
 /*------3.registro--------*/
 .imagen-fondo--body {
   background-image: url(../multimedia/img/probarfavi.png);
@@ -1861,9 +1761,16 @@
     height: 1000px;
   }
 }
+.tarjetas-conocenos .tarjetas-conocenos__card1 .tarjetas-conocenos__card__header {
+  overflow: hidden;
+}
 .tarjetas-conocenos .tarjetas-conocenos__card1 .tarjetas-conocenos__card__header img {
   width: 600px;
   height: 500px;
+  transition: transform 0.3s ease;
+}
+.tarjetas-conocenos .tarjetas-conocenos__card1 .tarjetas-conocenos__card__header img:hover {
+  transform: scale(1.2);
 }
 @media (max-width: 1200px) {
   .tarjetas-conocenos .tarjetas-conocenos__card1 .tarjetas-conocenos__card__header img {
@@ -2010,9 +1917,16 @@
     font-size: 24%;
   }
 }
+.tarjetas-conocenos .tarjetas-conocenos__card2 .tarjetas-conocenos__card__header {
+  overflow: hidden;
+}
 .tarjetas-conocenos .tarjetas-conocenos__card2 .tarjetas-conocenos__card__header img {
   width: 600px;
   height: 500px;
+  transition: transform 0.3s ease;
+}
+.tarjetas-conocenos .tarjetas-conocenos__card2 .tarjetas-conocenos__card__header img:hover {
+  transform: scale(1.2);
 }
 @media (max-width: 1200px) {
   .tarjetas-conocenos .tarjetas-conocenos__card2 .tarjetas-conocenos__card__header img {
