@@ -10,6 +10,7 @@
 @import "Ubic-Regist";
 @import "footer";
 @import "carusel-edit";
+@import "portada-img-exp-cent";
 @import "bloque-regist";
 @import "form-regist";
 
@@ -204,65 +205,7 @@
     }
 }
 /*------2.Exp Cent--------*/
-.exp-cent {
-    margin-top: 74px;
-    width: 100%;
-    height: 550px;
-    position: relative;
-    font-size: 100px;
-    h1 {
-        position: absolute;
-        color:white;
-        width: 100%;
-        height: 676px;
-        font-size: 100%;
-        display: inline-flex;
-        justify-content: center;
-        align-items: center;
-        font-weight: 900;
-        text-shadow: 3px 5px 2px #474747, 32px 20px 9px rgba(255,255,255,0.23);
-        color: #FFFFFF;
-        @media (max-width:1440px){
-            height: 506px;
-            font-size: 90%;
-        }
-        @media (max-width:1200px){
-            height: 426px;
-            font-size: 80%;
-        }
-        @media (max-width:1024px){
-            height: 326px;
-            font-size: 70%;
-        }
-        @media (max-width:768px){
-            height: 246px;
-            font-size: 55%;
-        }
-        @media (max-width:575px){
-            height: 176px;
-            font-size: 40%;
-        }
-    }
-    img {
-        width: 100%;
-        height: 676px;
-        @media (max-width:1440px){
-            height: 506px;
-        }
-        @media (max-width:1200px){
-            height: 426px;
-        }
-        @media (max-width:1024px){
-            height: 326px;
-        }
-        @media (max-width:768px){
-            height: 246px;
-        }
-        @media (max-width:575px){
-            height: 176px;
-        }
-    }
-}
+
 .tarjetas-exp-cent {
     width: 1400px;
     height: auto;
@@ -270,6 +213,8 @@
     flex-wrap: wrap;
     justify-content: space-around;
     margin: auto;
+    margin-top: 60px;
+    margin-bottom: 60px;
     @media (max-width:1400px){
         width: 100%;
     }
@@ -318,33 +263,42 @@
     background-image: url(../multimedia/img/carusel1.jpg);
     background-attachment: fixed;
     background-position-y: -150px;
-    @media (max-width:1024px){
-        background-position-y:-200px;
+    font-size: 100px;
+    @media (max-width:1440px){
+        background-size: contain;
+        background-position-y:top;
     }
     @media (max-width:768px){
-        background-position-y:-300px;
+        background-position-y: 70px;
+    }
+    @media (max-width:575px){
+        background-position-y:75px;
     }
     h1 {
         color:white;
         width: 100%;
         height: 550px;
-        font-size: 6em;
+        font-size: 100%;
         display: inline-flex;
         justify-content: center;
         align-items: center;
         font-weight: 900;
         text-shadow: 3px 5px 2px #474747, 32px 20px 9px rgba(255,255,255,0.23);
         color: #FFFFFF;
+        @media (max-width:1200px){
+            font-size: 80%;
+        }
         @media (max-width:1024px){
-            font-size: 4em;
+            height: 376px;
+            font-size: 60%;
         }
         @media (max-width:768px){
-            font-size: 3em;
-            height: 450px;
+            font-size: 55%;
+            height: 376px;
         }
         @media (max-width:575px){
-            font-size: 2em;
-            height: 350px;
+            font-size: 45%;
+            height: 276px;
         }
     }
 }

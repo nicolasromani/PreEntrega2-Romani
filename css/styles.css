@@ -1016,6 +1016,86 @@
   margin-top: 74px;
 }
 
+.exp-cent {
+  margin-top: 74px;
+  width: 100%;
+  height: 550px;
+  position: relative;
+  font-size: 100px;
+}
+.exp-cent h1 {
+  position: absolute;
+  color: white;
+  width: 100%;
+  height: 676px;
+  font-size: 100%;
+  display: inline-flex;
+  justify-content: center;
+  align-items: center;
+  font-weight: 900;
+  text-shadow: 3px 5px 2px #474747, 32px 20px 9px rgba(255, 255, 255, 0.23);
+  color: #FFFFFF;
+}
+@media (max-width: 1440px) {
+  .exp-cent h1 {
+    height: 506px;
+    font-size: 90%;
+  }
+}
+@media (max-width: 1200px) {
+  .exp-cent h1 {
+    height: 426px;
+    font-size: 80%;
+  }
+}
+@media (max-width: 1024px) {
+  .exp-cent h1 {
+    height: 326px;
+    font-size: 70%;
+  }
+}
+@media (max-width: 768px) {
+  .exp-cent h1 {
+    height: 246px;
+    font-size: 55%;
+  }
+}
+@media (max-width: 575px) {
+  .exp-cent h1 {
+    height: 176px;
+    font-size: 40%;
+  }
+}
+.exp-cent img {
+  width: 100%;
+  height: 676px;
+}
+@media (max-width: 1440px) {
+  .exp-cent img {
+    height: 506px;
+  }
+}
+@media (max-width: 1200px) {
+  .exp-cent img {
+    height: 426px;
+  }
+}
+@media (max-width: 1024px) {
+  .exp-cent img {
+    height: 326px;
+  }
+}
+@media (max-width: 768px) {
+  .exp-cent img {
+    height: 246px;
+  }
+}
+@media (max-width: 575px) {
+  .exp-cent img {
+    height: 176px;
+  }
+}
+
 .registro--modificador {
   margin-top: 50px;
   background-color: black;
@@ -1418,86 +1498,6 @@
 }
 
 /*------2.Exp Cent--------*/
-.exp-cent {
-  margin-top: 74px;
-  width: 100%;
-  height: 550px;
-  position: relative;
-  font-size: 100px;
-}
-.exp-cent h1 {
-  position: absolute;
-  color: white;
-  width: 100%;
-  height: 676px;
-  font-size: 100%;
-  display: inline-flex;
-  justify-content: center;
-  align-items: center;
-  font-weight: 900;
-  text-shadow: 3px 5px 2px #474747, 32px 20px 9px rgba(255, 255, 255, 0.23);
-  color: #FFFFFF;
-}
-@media (max-width: 1440px) {
-  .exp-cent h1 {
-    height: 506px;
-    font-size: 90%;
-  }
-}
-@media (max-width: 1200px) {
-  .exp-cent h1 {
-    height: 426px;
-    font-size: 80%;
-  }
-}
-@media (max-width: 1024px) {
-  .exp-cent h1 {
-    height: 326px;
-    font-size: 70%;
-  }
-}
-@media (max-width: 768px) {
-  .exp-cent h1 {
-    height: 246px;
-    font-size: 55%;
-  }
-}
-@media (max-width: 575px) {
-  .exp-cent h1 {
-    height: 176px;
-    font-size: 40%;
-  }
-}
-.exp-cent img {
-  width: 100%;
-  height: 676px;
-}
-@media (max-width: 1440px) {
-  .exp-cent img {
-    height: 506px;
-  }
-}
-@media (max-width: 1200px) {
-  .exp-cent img {
-    height: 426px;
-  }
-}
-@media (max-width: 1024px) {
-  .exp-cent img {
-    height: 326px;
-  }
-}
-@media (max-width: 768px) {
-  .exp-cent img {
-    height: 246px;
-  }
-}
-@media (max-width: 575px) {
-  .exp-cent img {
-    height: 176px;
-  }
-}
-
 .tarjetas-exp-cent {
   width: 1400px;
   height: auto;
@@ -1505,6 +1505,8 @@
   flex-wrap: wrap;
   justify-content: space-around;
   margin: auto;
+  margin-top: 60px;
+  margin-bottom: 60px;
 }
 @media (max-width: 1400px) {
   .tarjetas-exp-cent {
@@ -1555,22 +1557,29 @@
   background-image: url(../multimedia/img/carusel1.jpg);
   background-attachment: fixed;
   background-position-y: -150px;
+  font-size: 100px;
 }
-@media (max-width: 1024px) {
+@media (max-width: 1440px) {
   .portada-registro {
-    background-position-y: -200px;
+    background-size: contain;
+    background-position-y: top;
   }
 }
 @media (max-width: 768px) {
   .portada-registro {
-    background-position-y: -300px;
+    background-position-y: 70px;
+  }
+}
+@media (max-width: 575px) {
+  .portada-registro {
+    background-position-y: 75px;
   }
 }
 .portada-registro h1 {
   color: white;
   width: 100%;
   height: 550px;
-  font-size: 6em;
+  font-size: 100%;
   display: inline-flex;
   justify-content: center;
   align-items: center;
@@ -1578,21 +1587,27 @@
   text-shadow: 3px 5px 2px #474747, 32px 20px 9px rgba(255, 255, 255, 0.23);
   color: #FFFFFF;
 }
+@media (max-width: 1200px) {
+  .portada-registro h1 {
+    font-size: 80%;
+  }
+}
 @media (max-width: 1024px) {
   .portada-registro h1 {
-    font-size: 4em;
+    height: 376px;
+    font-size: 60%;
   }
 }
 @media (max-width: 768px) {
   .portada-registro h1 {
-    font-size: 3em;
-    height: 450px;
+    font-size: 55%;
+    height: 376px;
   }
 }
 @media (max-width: 575px) {
   .portada-registro h1 {
-    font-size: 2em;
-    height: 350px;
+    font-size: 45%;
+    height: 276px;
   }
 }
 
