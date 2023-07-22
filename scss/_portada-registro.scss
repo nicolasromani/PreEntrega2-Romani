@@ -1,10 +1,21 @@
-.exp-cent {
+.portada-registro {
     margin-top: 74px;
-    width: 100%;
     position: relative;
+    background-image: url(../multimedia/img/portada-registro.jpg);
+    background-attachment: fixed;
+    background-size: cover;
+    background-position: center;
     font-size: 100px;
+    @media (max-width: 1200px){
+        background-position-y: -150px;
+    }    
+    @media (max-width:768px){   
+        background-position-y: -190px;
+    }
+    @media (max-width:575px){
+        background-position-y: -300;
+    }
     h1 {
-        position: absolute;
         color:white;
         width: 100%;
         height: 676px;
@@ -15,12 +26,11 @@
         font-weight: 900;
         text-shadow: 3px 5px 2px #474747, 32px 20px 9px rgba(255,255,255,0.23);
         color: #FFFFFF;
-        @media (max-width:1900px){
+        @media (max-width: 1900px){
             height: 576px;
         }
-        @media (max-width:1440px){
+        @media (max-width: 1440px){
             height: 506px;
-            font-size: 90%;
         }
         @media (max-width:1200px){
             height: 426px;
@@ -28,33 +38,14 @@
         }
         @media (max-width:1024px){
             height: 326px;
-            font-size: 70%;
+            font-size: 60%;
         }
         @media (max-width:768px){
-            height: 290px;
             font-size: 55%;
-        }
-        @media (max-width:575px){
-            height: 250px;
-            font-size: 40%;
-        }
-    }
-    img {
-        width: 100%;
-        height: 676px;
-        @media (max-width:1440px){
-            height: 506px;
-        }
-        @media (max-width:1200px){
-            height: 426px;
-        }
-        @media (max-width:1024px){
-            height: 326px;
-        }
-        @media (max-width:768px){
             height: 290px;
         }
         @media (max-width:575px){
+            font-size: 35%;
             height: 250px;
         }
     }

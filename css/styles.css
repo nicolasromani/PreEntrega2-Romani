@@ -1019,7 +1019,6 @@
 .exp-cent {
   margin-top: 74px;
   width: 100%;
-  height: 550px;
   position: relative;
   font-size: 100px;
 }
@@ -1035,6 +1034,11 @@
   font-weight: 900;
   text-shadow: 3px 5px 2px #474747, 32px 20px 9px rgba(255, 255, 255, 0.23);
   color: #FFFFFF;
+}
+@media (max-width: 1900px) {
+  .exp-cent h1 {
+    height: 576px;
+  }
 }
 @media (max-width: 1440px) {
   .exp-cent h1 {
@@ -1056,13 +1060,13 @@
 }
 @media (max-width: 768px) {
   .exp-cent h1 {
-    height: 246px;
+    height: 290px;
     font-size: 55%;
   }
 }
 @media (max-width: 575px) {
   .exp-cent h1 {
-    height: 176px;
+    height: 250px;
     font-size: 40%;
   }
 }
@@ -1087,12 +1091,12 @@
 }
 @media (max-width: 768px) {
   .exp-cent img {
-    height: 246px;
+    height: 290px;
   }
 }
 @media (max-width: 575px) {
   .exp-cent img {
-    height: 176px;
+    height: 250px;
   }
 }
 
@@ -1142,6 +1146,77 @@
   font-size: 23px;
   text-align: center;
   margin-bottom: 5px;
+}
+
+.portada-registro {
+  margin-top: 74px;
+  position: relative;
+  background-image: url(../multimedia/img/portada-registro.jpg);
+  background-attachment: fixed;
+  background-size: cover;
+  background-position: center;
+  font-size: 100px;
+}
+@media (max-width: 1200px) {
+  .portada-registro {
+    background-position-y: -150px;
+  }
+}
+@media (max-width: 768px) {
+  .portada-registro {
+    background-position-y: -190px;
+  }
+}
+@media (max-width: 575px) {
+  .portada-registro {
+    background-position-y: -300;
+  }
+}
+.portada-registro h1 {
+  color: white;
+  width: 100%;
+  height: 676px;
+  font-size: 100%;
+  display: inline-flex;
+  justify-content: center;
+  align-items: center;
+  font-weight: 900;
+  text-shadow: 3px 5px 2px #474747, 32px 20px 9px rgba(255, 255, 255, 0.23);
+  color: #FFFFFF;
+}
+@media (max-width: 1900px) {
+  .portada-registro h1 {
+    height: 576px;
+  }
+}
+@media (max-width: 1440px) {
+  .portada-registro h1 {
+    height: 506px;
+  }
+}
+@media (max-width: 1200px) {
+  .portada-registro h1 {
+    height: 426px;
+    font-size: 80%;
+  }
+}
+@media (max-width: 1024px) {
+  .portada-registro h1 {
+    height: 326px;
+    font-size: 60%;
+  }
+}
+@media (max-width: 768px) {
+  .portada-registro h1 {
+    font-size: 55%;
+    height: 290px;
+  }
+}
+@media (max-width: 575px) {
+  .portada-registro h1 {
+    font-size: 35%;
+    height: 250px;
+  }
 }
 
 .registro--modificador {
@@ -1323,12 +1398,12 @@
 }
 @media (max-width: 768px) {
   .menu {
-    height: 320px;
+    height: 364px;
   }
 }
 @media (max-width: 575px) {
   .menu {
-    height: 250px;
+    height: 324px;
   }
 }
 .menu .video-portada {
@@ -1550,71 +1625,11 @@
   background-image: url(../multimedia/img/probarfavi.png);
 }
 
-.portada-registro {
-  margin-top: 74px;
-  height: 550px;
-  background-image: url(../multimedia/img/carusel1.jpg);
-  background-attachment: fixed;
-  background-position-y: -150px;
-  font-size: 100px;
-}
-@media (max-width: 1440px) {
-  .portada-registro {
-    background-size: contain;
-    background-position-y: top;
-  }
-}
-@media (max-width: 768px) {
-  .portada-registro {
-    background-position-y: 70px;
-  }
-}
-@media (max-width: 575px) {
-  .portada-registro {
-    background-position-y: 75px;
-  }
-}
-.portada-registro h1 {
-  color: white;
-  width: 100%;
-  height: 550px;
-  font-size: 100%;
-  display: inline-flex;
-  justify-content: center;
-  align-items: center;
-  font-weight: 900;
-  text-shadow: 3px 5px 2px #474747, 32px 20px 9px rgba(255, 255, 255, 0.23);
-  color: #FFFFFF;
-}
-@media (max-width: 1200px) {
-  .portada-registro h1 {
-    font-size: 80%;
-  }
-}
-@media (max-width: 1024px) {
-  .portada-registro h1 {
-    height: 376px;
-    font-size: 60%;
-  }
-}
-@media (max-width: 768px) {
-  .portada-registro h1 {
-    font-size: 55%;
-    height: 376px;
-  }
-}
-@media (max-width: 575px) {
-  .portada-registro h1 {
-    font-size: 45%;
-    height: 276px;
-  }
-}
-
 .registro-bloque-Pr {
   display: flex;
   width: 100%;
   justify-content: center;
-  margin: 150px 0;
+  margin: 100px 0;
 }
 @media (max-width: 1024px) {
   .registro-bloque-Pr {
@@ -1695,15 +1710,18 @@
 /*------4.Conocenos--------*/
 .portada-conocenos {
   margin-top: 74px;
-  height: 550px;
-  background-image: url(../multimedia/img/carusel1.jpg);
-  background-position-y: -200px;
+  position: relative;
+  background-image: url(../multimedia/img/portada-conocenos.jpg);
+  background-size: cover;
+  background-position: center;
+  font-size: 100px;
+  height: 676px;
 }
 .portada-conocenos h1 {
   color: white;
   width: 100%;
   height: 550px;
-  font-size: 6em;
+  font-size: 140%;
   display: inline-flex;
   justify-content: center;
   align-items: center;
