@@ -1096,6 +1096,54 @@
   }
 }
 
+.tarjetas-exp-cent {
+  width: 1400px;
+  height: auto;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  margin: auto;
+  margin-top: 60px;
+  margin-bottom: 60px;
+}
+@media (max-width: 1400px) {
+  .tarjetas-exp-cent {
+    width: 100%;
+  }
+}
+.tarjetas-exp-cent .tarjeta-exp-cent {
+  width: 410px;
+  height: auto;
+  display: flex;
+  flex-direction: column;
+  border-radius: 8px;
+  overflow: hidden;
+  box-shadow: 0 0 12px #d7d7d7;
+  background-color: #f8f8f8;
+  font-family: "Gill Sans", Calibri, sans-serif;
+  color: rgb(43, 41, 41);
+  margin: 25px;
+  transition: transform 0.3s ease;
+}
+.tarjetas-exp-cent .tarjeta-exp-cent:hover {
+  transform: scale(1.1);
+}
+.tarjetas-exp-cent .tarjeta-exp-cent .tarjeta-exp-cent__header img {
+  width: 410px;
+  height: 430px;
+  object-fit: cover;
+}
+.tarjetas-exp-cent .tarjeta-exp-cent .tarjeta-exp-cent__footer {
+  font-size: 20px;
+  padding: 10px;
+  text-align: center;
+}
+.tarjetas-exp-cent .tarjeta-exp-cent .tarjeta-exp-cent__footer h3 {
+  font-size: 23px;
+  text-align: center;
+  margin-bottom: 5px;
+}
+
 .registro--modificador {
   margin-top: 50px;
   background-color: black;
@@ -1495,55 +1543,6 @@
     height: 300px;
     margin-bottom: 25px;
   }
-}
-
-/*------2.Exp Cent--------*/
-.tarjetas-exp-cent {
-  width: 1400px;
-  height: auto;
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: space-around;
-  margin: auto;
-  margin-top: 60px;
-  margin-bottom: 60px;
-}
-@media (max-width: 1400px) {
-  .tarjetas-exp-cent {
-    width: 100%;
-  }
-}
-.tarjetas-exp-cent .tarjeta-exp-cent {
-  width: 410px;
-  height: auto;
-  display: flex;
-  flex-direction: column;
-  border-radius: 8px;
-  overflow: hidden;
-  box-shadow: 0 0 12px #d7d7d7;
-  background-color: #f8f8f8;
-  font-family: "Gill Sans", Calibri, sans-serif;
-  color: rgb(43, 41, 41);
-  margin: 25px;
-  transition: transform 0.3s ease;
-}
-.tarjetas-exp-cent .tarjeta-exp-cent:hover {
-  transform: scale(1.1);
-}
-.tarjetas-exp-cent .tarjeta-exp-cent .tarjeta-exp-cent__header img {
-  width: 410px;
-  height: 430px;
-  object-fit: cover;
-}
-.tarjetas-exp-cent .tarjeta-exp-cent .tarjeta-exp-cent__footer {
-  font-size: 20px;
-  padding: 10px;
-  text-align: center;
-}
-.tarjetas-exp-cent .tarjeta-exp-cent .tarjeta-exp-cent__footer h3 {
-  font-size: 23px;
-  text-align: center;
-  margin-bottom: 5px;
 }
 
 /*------3.registro--------*/
