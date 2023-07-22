@@ -941,18 +941,52 @@
   }
 }
 
+.menu--modificador {
+  height: 624px;
+}
+@media (max-width: 1024px) {
+  .menu--modificador {
+    height: 450px;
+  }
+}
+@media (max-width: 575px) {
+  .menu--modificador {
+    height: 350px;
+  }
+}
+
 .carousel .carousel-inner .carousel-item .d-block {
   margin-top: 74px;
-  height: 550px;
+  height: 676px;
+}
+@media (max-width: 1900px) {
+  .carousel .carousel-inner .carousel-item .d-block {
+    height: 576px;
+  }
+}
+@media (max-width: 1440px) {
+  .carousel .carousel-inner .carousel-item .d-block {
+    height: 506px;
+  }
+}
+@media (max-width: 1200px) {
+  .carousel .carousel-inner .carousel-item .d-block {
+    height: 426px;
+  }
 }
 @media (max-width: 1024px) {
   .carousel .carousel-inner .carousel-item .d-block {
-    height: 376px;
+    height: 326px;
+  }
+}
+@media (max-width: 768px) {
+  .carousel .carousel-inner .carousel-item .d-block {
+    height: 290px;
   }
 }
 @media (max-width: 575px) {
   .carousel .carousel-inner .carousel-item .d-block {
-    height: 276px;
+    height: 250px;
   }
 }
 .carousel .carousel-inner .carousel-item .carousel-caption {
@@ -963,17 +997,17 @@
 }
 @media (max-width: 1440px) {
   .carousel .carousel-inner .carousel-item .carousel-caption h5 {
-    font-size: 87%;
+    font-size: 75%;
   }
 }
 @media (max-width: 1200px) {
   .carousel .carousel-inner .carousel-item .carousel-caption h5 {
-    font-size: 73%;
+    font-size: 65%;
   }
 }
 @media (max-width: 1024px) {
   .carousel .carousel-inner .carousel-item .carousel-caption h5 {
-    font-size: 62%;
+    font-size: 50%;
   }
 }
 @media (max-width: 768px) {
@@ -989,19 +1023,24 @@
 .carousel .carousel-inner .carousel-item .carousel-caption p {
   font-size: 80%;
 }
+@media (max-width: 1440px) {
+  .carousel .carousel-inner .carousel-item .carousel-caption p {
+    font-size: 70%;
+  }
+}
 @media (max-width: 1200px) {
   .carousel .carousel-inner .carousel-item .carousel-caption p {
-    font-size: 68%;
+    font-size: 60%;
   }
 }
 @media (max-width: 1024px) {
   .carousel .carousel-inner .carousel-item .carousel-caption p {
-    font-size: 56%;
+    font-size: 45%;
   }
 }
 @media (max-width: 768px) {
   .carousel .carousel-inner .carousel-item .carousel-caption p {
-    font-size: 38%;
+    font-size: 40%;
   }
 }
 @media (max-width: 575px) {
@@ -1156,6 +1195,11 @@
   background-size: cover;
   background-position: center;
   font-size: 100px;
+}
+@media (max-width: 1440px) {
+  .portada-registro {
+    background-position-y: -150px;
+  }
 }
 @media (max-width: 1200px) {
   .portada-registro {
@@ -1467,20 +1511,6 @@
 }
 
 /*------1.hotel--------*/
-.menu--modificador {
-  height: 624px;
-}
-@media (max-width: 1024px) {
-  .menu--modificador {
-    height: 450px;
-  }
-}
-@media (max-width: 575px) {
-  .menu--modificador {
-    height: 350px;
-  }
-}
-
 .tarjetas_hotel {
   background-color: #d8d6d6;
   height: auto;

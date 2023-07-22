@@ -89,15 +89,7 @@
 }
 
 /*------1.hotel--------*/
-.menu--modificador {
-    height: 624px;
-    @media (max-width:1024px){
-        height: 450px;
-    }
-    @media (max-width:575px){
-        height: 350px;
-    }
-}
+
 .tarjetas_hotel {
     background-color: #d8d6d6;
     height: auto;

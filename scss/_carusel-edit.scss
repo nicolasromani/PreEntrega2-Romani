@@ -1,14 +1,35 @@
+.menu--modificador {
+    height: 624px;
+    @media (max-width:1024px){
+        height: 450px;
+    }
+    @media (max-width:575px){
+        height: 350px;
+    }
+}
 .carousel {
     .carousel-inner{
         .carousel-item{
             .d-block {
                 margin-top: 74px;
-                height: 550px;
+                height: 676px;
+                @media (max-width:1900px){
+                    height: 576px;
+                }
+                @media (max-width:1440px){
+                    height: 506px;
+                }
+                @media (max-width:1200px){
+                    height: 426px;
+                }
                 @media (max-width:1024px){
-                    height: 376px;
+                    height: 326px;
+                }
+                @media (max-width:768px){
+                    height: 290px;
                 }
                 @media (max-width:575px){
-                    height: 276px;
+                    height: 250px;
                 }
             }
             .carousel-caption {
@@ -16,13 +37,13 @@
                 h5 {
                     font-size: 100%;
                     @media (max-width:1440px){
-                        font-size: 87%;
+                        font-size: 75%;
                     }
                     @media (max-width:1200px){
-                        font-size: 73%;
+                        font-size: 65%;
                     }
                     @media (max-width:1024px){
-                        font-size: 62%;  
+                        font-size: 50%;  
                     }
                     @media (max-width:768px){
                         font-size: 46%;
@@ -32,15 +53,18 @@
                     }
                 }
                 p {
+                    @media (max-width:1440px){
+                        font-size: 70%;
+                    }
                     font-size: 80%;
                     @media (max-width:1200px){
-                        font-size: 68%;
+                        font-size: 60%;
                     }
                     @media (max-width:1024px){
-                        font-size: 56%;
+                        font-size: 45%;
                     }
                     @media (max-width:768px){
-                        font-size: 38%;
+                        font-size: 40%;
                     }
                     @media (max-width:575px){
                         font-size: 30%;
