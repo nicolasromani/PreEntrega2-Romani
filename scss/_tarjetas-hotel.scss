@@ -11,6 +11,18 @@
         display: flex;
         flex-direction: column;
         margin-bottom: 50px;
+        @media (max-width:1440px) {
+            width: 1100px;
+        }
+        @media (max-width:1024px) {
+            width: 850px;
+        }
+        @media (max-width:768px) {
+            width: 650px;
+        }
+        @media (max-width:575px) {
+            width: 380px;
+        }
         .tarjetas_hotel__textos {
             width: 100%;
             height: auto;
@@ -19,26 +31,47 @@
             display: flex;
             flex-direction: column;
             text-align: start;
+            @media (max-width:768px) {
+                text-align: center;
+            }
             h3 {
                 font-size: 25px;
                 font-family: 'Playfair Display', serif;
                 font-weight: 800;
                 margin-bottom: 10px;
+                @media (max-width:768px) {
+                    font-size: 20px;
+                }
+                @media (max-width:575px) {
+                    font-size: 18px;
+                }
             }
             p {
                 margin-bottom: 20px;
                 font-size: 18px;
+                @media (max-width:575px) {
+                    font-size: 16px;
+                }
             }
         }
         img {
             max-width: 100%;
             height: 700px; 
             box-shadow: 0px 10px 13px -7px #000000, 0px 13px 10px 5px rgba(0,0,0,0.15);
+            @media (max-width:1440px) {
+                height: 500px;
+            }
+            @media (max-width:768px) {
+                height: 300px;
+            }
+            @media (max-width:575px) {
+                height: 200px;
+            }
         }
     }
     .tarjetas_hotel__avisos2 {
         width: 100%;
-        height: 930px;
+        height: auto;
         background-color: rgb(59, 59, 59);
         display: flex;
         flex-wrap: wrap;
@@ -49,7 +82,7 @@
             border-radius: 15px;
             overflow: hidden;
             background-color: white;
-            margin: 65px;
+            margin: 65px 15px;
             transition: 0.3s ease;
             &:hover {
                 box-shadow: 0 7px 19px 0 #DBDBDB;
@@ -99,17 +132,39 @@
             align-items: center;
             width: 1600px;
             margin-bottom: 25px;
+            @media (max-width:1440px) {
+                width: 1100px;
+            }
+            @media (max-width:1024px) {
+                width: 850px;
+                text-align: center;
+            }
+            @media (max-width:768px) {
+                width: 650px;
+            }
+            @media (max-width:575px) {
+                width: 380px;
+            }
             h3 {
                 color: white;
                 font-size: 25px;
                 font-family: 'Playfair Display', serif;
                 text-decoration: underline;
+                @media (max-width:1024px) {
+                    font-size: 23px;
+                }
+                @media (max-width:768px) {
+                    font-size: 18px;
+                }
             }
             p {
                 color: white;
                 font-size: 18px;
                 margin: 0;
                 font-family: 'Montserrat', sans-serif;
+                @media (max-width:768px) {
+                    font-size: 16px;
+                }
             }
             
         }
@@ -121,23 +176,48 @@
         flex-direction: column;
         align-items: center;
         margin-top: 50px;
+        @media (max-width:1440px) {
+            width: 1100px;
+        }
+        @media (max-width:1024px) {
+            width: 850px;
+        }
+        @media (max-width:768px) {
+            width: 650px;
+        }
+        @media (max-width:575px) {
+            width: 380px;
+        }
         img {
             max-width: 100%;
             height: 700px; 
             margin-bottom: 25px;
             box-shadow: 0px 10px 13px -7px #000000, 0px 13px 10px 5px rgba(0,0,0,0.15);
+            @media (max-width:1440px) {
+                height: 500px;
+            }
+            @media (max-width:575px) {
+                height: 400px;
+            }
         }
         .tarjetas_hotel__textos {
+            text-align: center;
             h3 {
                 font-size: 25px;
                 font-family: 'Playfair Display', serif;
                 font-weight: 800;
                 margin-bottom: 10px;
+                @media (max-width:575px) {
+                    font-size: 18px;
+                }
             }
             p {
                 margin-bottom: 20px;
                 font-size: 18px;
                 font-family: 'Montserrat', sans-serif;
+                @media (max-width:575px) {
+                    font-size: 16px;
+                }
             }
         }
     }
