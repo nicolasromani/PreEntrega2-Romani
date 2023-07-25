@@ -42,3 +42,38 @@
         }
     }
 }
+
+%tarj-exp-cent {
+    width:410px;
+        height: auto;
+        display: flex;
+        flex-direction: column;
+        border-radius: 8px;
+        
+        overflow: hidden;
+        box-shadow: $box-shadow;
+        background-color: #f8f8f8;
+        font-family: 'Gill Sans', Calibri, sans-serif;
+        color: rgb(43, 41, 41);
+        margin: 25px;
+    
+        transition: transform 0.3s ease;
+        &:hover {
+            transform: scale(1.1);
+        }
+        .tarjeta-exp-cent__header img {
+            width: 410px;
+            height: 430px;
+            object-fit: cover;
+        }
+        .tarjeta-exp-cent__footer {
+            font-size: 20px;
+            padding: 10px;
+            text-align: center;
+            h3 {
+                font-size: 23px;
+                text-align: center;
+                margin-bottom: 5px;
+            }
+        }
+}
