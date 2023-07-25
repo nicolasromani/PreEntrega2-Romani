@@ -7,6 +7,52 @@
   padding: 0;
 }
 
+.registro .registro__inputs .registro__boton, .foot .foot__contacto .foot__boton, .bloqueMapaLogin .registro .registro__inputs .registro__boton {
+  background-color: rgb(228, 132, 6);
+  height: 50px;
+  width: 170px;
+  border-radius: 50px;
+  color: white;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  transition: 0.3s ease all;
+  cursor: pointer;
+  position: relative;
+  overflow: hidden;
+  border: solid 3px rgb(228, 132, 6);
+}
+@media (max-width: 768px) {
+  .registro .registro__inputs .registro__boton, .foot .foot__contacto .foot__boton, .bloqueMapaLogin .registro .registro__inputs .registro__boton {
+    height: 40px;
+    width: 130px;
+  }
+}
+.registro .registro__inputs .registro__boton span, .foot .foot__contacto .foot__boton span, .bloqueMapaLogin .registro .registro__inputs .registro__boton span {
+  z-index: 2;
+}
+@media (max-width: 768px) {
+  .registro .registro__inputs .registro__boton span, .foot .foot__contacto .foot__boton span, .bloqueMapaLogin .registro .registro__inputs .registro__boton span {
+    font-size: 13px;
+  }
+}
+.registro .registro__inputs .registro__boton::after, .foot .foot__contacto .foot__boton::after, .bloqueMapaLogin .registro .registro__inputs .registro__boton::after {
+  content: "";
+  width: 1px;
+  height: 1px;
+  background-color: none;
+  position: absolute;
+  z-index: 1;
+  top: 50%;
+  left: 50%;
+  transition: 0.5s ease-in-out all;
+  border-radius: 100px;
+}
+.registro .registro__inputs .registro__boton:hover::after, .foot .foot__contacto .foot__boton:hover::after {
+  transform: scale(200);
+  background-color: black;
+}
+
 .menu__links {
   height: 74px;
   background-color: black;
@@ -702,42 +748,6 @@
   padding: 0 15px;
   margin-right: 5px;
 }
-.bloqueMapaLogin .registro .registro__inputs .registro__boton {
-  background-color: rgb(228, 132, 6);
-  height: 45px;
-  width: 140px;
-  border-radius: 50px;
-  color: white;
-  font-size: 14px;
-  font-weight: 900;
-  display: inline-flex;
-  align-items: center;
-  justify-content: center;
-  transition: 0.3s ease all;
-  cursor: pointer;
-  position: relative;
-  overflow: hidden;
-  border: solid 3px rgb(228, 132, 6);
-}
-.bloqueMapaLogin .registro .registro__inputs .registro__boton span {
-  z-index: 2;
-}
-.bloqueMapaLogin .registro .registro__inputs .registro__boton::after {
-  content: "";
-  width: 1px;
-  height: 1px;
-  background-color: none;
-  position: absolute;
-  z-index: 1;
-  top: 50%;
-  left: 50%;
-  transition: 0.5s ease-in-out all;
-  border-radius: 100px;
-}
-.bloqueMapaLogin .registro .registro__inputs .registro__boton:hover::after {
-  transform: scale(200);
-  background-color: black;
-}
 .bloqueMapaLogin .registro .registro__redes {
   display: flex;
   flex-direction: column;
@@ -828,51 +838,6 @@
     font-size: 13px;
     font-weight: 900px;
   }
-}
-.foot .foot__contacto .foot__boton {
-  background-color: rgb(228, 132, 6);
-  height: 50px;
-  width: 170px;
-  border-radius: 50px;
-  color: white;
-  display: inline-flex;
-  align-items: center;
-  justify-content: center;
-  transition: 0.3s ease all;
-  cursor: pointer;
-  position: relative;
-  overflow: hidden;
-  border: solid 3px rgb(228, 132, 6);
-}
-@media (max-width: 768px) {
-  .foot .foot__contacto .foot__boton {
-    height: 40px;
-    width: 130px;
-  }
-}
-.foot .foot__contacto .foot__boton span {
-  z-index: 2;
-}
-@media (max-width: 768px) {
-  .foot .foot__contacto .foot__boton span {
-    font-size: 13px;
-  }
-}
-.foot .foot__contacto .foot__boton::after {
-  content: "";
-  width: 1px;
-  height: 1px;
-  background-color: none;
-  position: absolute;
-  z-index: 1;
-  top: 50%;
-  left: 50%;
-  transition: 0.5s ease-in-out all;
-  border-radius: 100px;
-}
-.foot .foot__contacto .foot__boton:hover::after {
-  transform: scale(200);
-  background-color: black;
 }
 .foot .foot__grid {
   width: 1050px;
@@ -1362,6 +1327,10 @@
     font-size: 16px;
   }
 }
+.registro .registro__textos h3 {
+  font-size: 28px;
+  margin-bottom: 8px;
+}
 @media (max-width: 575px) {
   .registro .registro__textos h3 {
     margin: 0;
@@ -1382,42 +1351,12 @@
   border-radius: 50px;
   padding: 0 15px;
   margin-right: 5px;
-}
-.registro .registro__inputs .registro__boton {
-  background-color: rgb(228, 132, 6);
-  height: 45px;
-  width: 140px;
-  border-radius: 50px;
-  color: white;
-  font-size: 14px;
-  font-weight: 900;
-  display: inline-flex;
-  align-items: center;
-  justify-content: center;
-  transition: 0.3s ease all;
-  cursor: pointer;
-  position: relative;
-  overflow: hidden;
-  border: solid 3px rgb(228, 132, 6);
+  font-size: 16px;
+  font-family: "Montserrat", sans-serif;
 }
 .registro .registro__inputs .registro__boton span {
-  z-index: 2;
-}
-.registro .registro__inputs .registro__boton::after {
-  content: "";
-  width: 1px;
-  height: 1px;
-  background-color: none;
-  position: absolute;
-  z-index: 1;
-  top: 50%;
-  left: 50%;
-  transition: 0.5s ease-in-out all;
-  border-radius: 100px;
-}
-.registro .registro__inputs .registro__boton:hover::after {
-  transform: scale(200);
-  background-color: black;
+  font-size: 16px;
+  font-family: "Montserrat", sans-serif;
 }
 .registro .registro__redes {
   display: flex;

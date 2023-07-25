@@ -1,0 +1,44 @@
+%boton-con-efecto {
+    background-color: $bg-color-button;
+    height: 50px;
+    width: 170px;
+    border-radius: 50px;
+    color: white;
+    
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    transition: .3s ease all;
+    cursor: pointer;
+    position: relative;
+    overflow: hidden;
+    border: solid 3px $bg-color-button;
+    @media (max-width:768px){
+        height: 40px;
+        width: 130px;
+    }
+    span {
+        z-index: 2;
+        @media (max-width:768px){
+            font-size: 13px;
+        }
+    }
+    &::after {
+        content: "";
+        width: 1px;
+        height: 1px;
+        background-color:none;
+        position: absolute;
+        z-index: 1;
+        top: 50%;
+        left: 50%;
+        transition: .5s ease-in-out all;
+        border-radius: 100px; 
+    }
+    &:hover {
+        &::after {
+            transform: scale(200);
+            background-color: black; 
+        }
+    }
+}
