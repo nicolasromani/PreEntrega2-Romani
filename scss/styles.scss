@@ -2,6 +2,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Libre+Baskerville&family=Montserrat&display=swap');
 
 @import "reset";
+@import "variables";
 @import "NavBar";
 @import "MenuHamb";
 @import "booker";
@@ -59,7 +60,7 @@
             top: 250px;
             margin: 0;
             font-weight: 400;
-            text-shadow: 3px 5px 2px #474747, 32px 20px 9px rgba(255,255,255,0.23);
+            text-shadow: $text-shadow;
             color: #FFFFFF;
             @media (max-width:1440px){
                 font-size: 240%;
@@ -174,7 +175,7 @@
         height: 500px;
         background-color: #f8f8f8;
         border-radius: 8px;
-        box-shadow: 0 0 12px #d7d7d7;
+        box-shadow: $box-shadow;
         display: flex;
         overflow: hidden;
         @media (max-width:1200px){

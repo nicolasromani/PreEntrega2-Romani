@@ -1,6 +1,6 @@
 .registro--modificador {
     margin-top: 50px;
-    background-color: black;
+    background-color: $bg-color;
     color: white;
     font-family: 'Montserrat', sans-serif;
 }
@@ -41,7 +41,7 @@
         margin-right: 5px;
         }
         .registro__boton {
-            background-color: rgb(228, 132, 6);
+            background-color: $bg-color-button;
             height: 45px;
             width: 140px;
             border-radius: 50px;
@@ -56,7 +56,7 @@
             cursor: pointer;
             position: relative;
             overflow: hidden;
-            border: solid 3px rgb(228, 132, 6);
+            border: solid 3px $bg-color-button;
             span {
                 z-index: 2;
             }
