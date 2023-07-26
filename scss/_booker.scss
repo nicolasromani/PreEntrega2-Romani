@@ -1,3 +1,9 @@
+.position575 {
+    @media (max-width:575px){
+        display: flex;
+        justify-content: center;
+    }
+}
 .booker {
     background-color: darkgray;
     width: 65%;
@@ -117,37 +123,6 @@
         }
     }
     .booker__boton input {
-        width: 150px;
-        height: 45px;
-        border-radius: 50px;
-        font-size: 25px;
-        border: solid 2px black;
-        cursor: pointer;
-        @media (max-width:1900px){
-            width: 130px;
-            height: 40px;
-            font-size: 22px;
-        }
-        @media (max-width:1440px){
-            width: 100px;
-            height: 35px;
-            font-size: 20px;
-        }
-        @media (max-width:1024px){
-            width: 80px;
-            height: 30px;
-            font-size: 16px;
-        }
-        @media (max-width:768px){
-            width: 70px;
-            height: 25px;
-            font-size: 12px;
-        }
-        @media (max-width:575px){
-            width: 75px;
-            height: 35px;
-            font-size: 17px;
-            font-weight: bold;
-        }
+        @include boton-booker(black,white,$bg-color-button);
     }
 }

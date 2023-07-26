@@ -4,7 +4,9 @@
 @import "reset";
 @import "variables";
 @import "extends";
+@import "mixins";
 @import "NavBar";
+@import "menu-y-video";
 @import "MenuHamb";
 @import "booker";
 @import "tarjetas-index";
@@ -17,150 +19,7 @@
 @import "portada-img-exp-cent";
 @import "tarjetas-exp-cent";
 @import "portada-registro";
+@import "registro-form-text";
 @import "form-regist";
 @import "portada-conocenos";
 @import "tarjetas-conocenos";
-
-.menu {
-    width: 100%;
-    height: 750px;
-    position: relative;
-    overflow: hidden;
-    font-family: 'Playfair Display', serif;
-    @media (max-width:1900px){
-        height: 650px;
-    }
-    @media (max-width:1440px){
-        height: 580px;
-    }
-    @media (max-width:1200px){
-        height: 500px;
-    }
-    @media (max-width:1024px){
-        height: 400px;
-    }
-    @media (max-width:768px){
-        height: 364px;
-    }
-    @media (max-width:575px){
-        height: 324px;
-    }
-    .video-portada {
-        margin-top: 74px;
-        font-size: 30px;
-        @media (max-width:575px){
-            margin-top: 60px;
-        }
-        video {
-            width: 100%;
-        }
-        h1 {
-            position: absolute;
-            color:white;
-            font-size: 300%;
-            text-align: center;
-            top: 250px;
-            margin: 0;
-            font-weight: 400;
-            text-shadow: $text-shadow;
-            color: #FFFFFF;
-            @media (max-width:1440px){
-                font-size: 240%;
-            }
-            @media (max-width:1200px){
-                font-size: 210%;
-                top: 190px;
-            }
-            @media (max-width:1024px){
-                font-size: 180%;
-                top: 150px;
-            }
-            @media (max-width:768px){
-                font-size: 140%;
-            }
-            @media (max-width:575px){
-                font-size: 90%;
-                top: 120px;
-            }
-        }
-    }
-}
-/*--------------------------------------------*/
-.position575 {
-    @media (max-width:575px){
-        display: flex;
-        justify-content: center;
-    }
-}
-/*------3.registro--------*/
-.imagen-fondo--body {
-    background-image: url(../multimedia/img/probarfavi.png);  
-}
-
-.registro-bloque-Pr {
-    display: flex;
-    width: 100%;
-    justify-content: center;
-    margin: 100px 0;
-    @media (max-width:1024px){
-        width: 100%;
-        justify-content: space-around;
-    }
-    @media (max-width:768px){
-        flex-direction: column;
-        align-items: center;
-    }
-    @media (max-width:575px){
-        flex-direction: column;
-        align-items: center;
-    }
-    .registro__pag-textos {
-        background-color: #e4e3e3e0;
-        padding: 20px;
-        width: 570px;
-        border-radius: 4px;
-        margin-right: 150px;
-        font-family: 'Montserrat', sans-serif;
-        font-size: 19px;
-        line-height: 30px;
-        color: black;
-        font-weight: bold;
-        display: flex;
-        flex-direction: column;
-        justify-content: space-around;
-        text-align: center;
-        @media (max-width:1024px){
-            margin-right: 0;
-        }
-        @media (max-width:768px){
-            margin-right: 0;
-            margin-bottom: 25px;
-        }
-        @media (max-width:575px){
-            width: 360px;
-            margin-right: 0;
-            margin-bottom: 25px;
-        }
-        span {
-            @media (max-width:575px){
-                font-size: 15px;
-            }
-        }
-        h3 {
-            font-family: 'Playfair Display', serif;
-            font-size: 40px;
-            margin: 20px 0;
-            color:  rgb(228, 132, 6);
-            font-weight: bold;
-            @media (max-width:575px){
-                font-size: 25px;
-            }
-        }
-        p {
-            @media (max-width:575px){
-                font-size: 15px;
-                line-height: 25px;
-            }
-        }
-    }
-}
