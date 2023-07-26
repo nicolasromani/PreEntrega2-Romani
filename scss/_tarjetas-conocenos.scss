@@ -24,7 +24,7 @@
         }
         @media (max-width:575px){
             width: 400px;
-            height: 1000px;
+            height: 750px;
         }
         .tarjetas-conocenos__card__header {
             overflow: hidden;
@@ -75,7 +75,7 @@
                     font-size: 50%;
                 }
                 @media (max-width:575px){
-                    font-size:40%;
+                    font-size:30%;
                 }
             }
             p {
@@ -85,6 +85,9 @@
                 text-align: center;
                 @media (max-width:575px){
                     font-size: 25%;
+                }
+                @media (max-width:575px){
+                    font-size: 20%;
                 }
             }
         }
@@ -109,9 +112,9 @@
         }
         @media (max-width:575px){
             width: 400px;
-            height: 1000px;
+            height: 900px;
         }
-        .tarjeta__conocenos__card__footer {
+        .tarjeta__conocenos__card__header2 {
             width: 600px;
             display: flex;
             flex-direction: column;
@@ -137,6 +140,9 @@
                 @media (max-width:1200px){
                     font-size: 40%;
                 }
+                @media (max-width:575px){
+                    font-size: 30%;
+                }
             }
             p {
                 margin: 0;
@@ -146,9 +152,12 @@
                 @media (max-width:1200px){
                     font-size: 24%;
                 }
+                @media (max-width:575px){
+                    font-size: 20%;
+                }
             }
         }
-        .tarjetas-conocenos__card__header {
+        .tarjetas-conocenos__card__footer2 {
             overflow: hidden;
             img {
                 width: 600px;

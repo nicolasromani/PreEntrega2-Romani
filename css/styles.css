@@ -506,7 +506,7 @@
 @media (max-width: 575px) {
   .tarjeta {
     width: 360px;
-    height: 640px;
+    height: 670px;
     flex-direction: column;
   }
 }
@@ -541,7 +541,7 @@
 @media (max-width: 575px) {
   .tarjeta .tarjeta__footer {
     width: 360px;
-    height: 280px;
+    height: 310px;
   }
 }
 .tarjeta .tarjeta__footer .tarjeta__textos {
@@ -556,6 +556,11 @@
 @media (max-width: 768px) {
   .tarjeta .tarjeta__footer .tarjeta__textos h3 {
     font-size: 70%;
+  }
+}
+@media (max-width: 575px) {
+  .tarjeta .tarjeta__footer .tarjeta__textos h3 {
+    font-size: 60%;
   }
 }
 .tarjeta .tarjeta__footer .tarjeta__textos p {
@@ -1256,9 +1261,20 @@
 .tarjetas_hotel .tarjetas_hotel__avisos2 .tarjeta_tipo-hab:hover {
   box-shadow: 0 7px 19px 0 #DBDBDB;
 }
+@media (max-width: 575px) {
+  .tarjetas_hotel .tarjetas_hotel__avisos2 .tarjeta_tipo-hab {
+    width: 400px;
+    height: 660px;
+  }
+}
 .tarjetas_hotel .tarjetas_hotel__avisos2 .tarjeta_tipo-hab .tarjeta_tipo-hab__header img {
   max-width: 100%;
   height: 360px;
+}
+@media (max-width: 575px) {
+  .tarjetas_hotel .tarjetas_hotel__avisos2 .tarjeta_tipo-hab .tarjeta_tipo-hab__header img {
+    height: 350px;
+  }
 }
 .tarjetas_hotel .tarjetas_hotel__avisos2 .tarjeta_tipo-hab .tarjeta_tipo-hab__footer {
   color: #000000;
@@ -1284,8 +1300,18 @@
   font-weight: bold;
   font-size: 16px;
 }
+@media (max-width: 575px) {
+  .tarjetas_hotel .tarjetas_hotel__avisos2 .tarjeta_tipo-hab .tarjeta_tipo-hab__footer .grilla_tipo-hab .grid1, .tarjetas_hotel .tarjetas_hotel__avisos2 .tarjeta_tipo-hab .tarjeta_tipo-hab__footer .grilla_tipo-hab .grid3, .tarjetas_hotel .tarjetas_hotel__avisos2 .tarjeta_tipo-hab .tarjeta_tipo-hab__footer .grilla_tipo-hab .grid5, .tarjetas_hotel .tarjetas_hotel__avisos2 .tarjeta_tipo-hab .tarjeta_tipo-hab__footer .grilla_tipo-hab .grid7, .tarjetas_hotel .tarjetas_hotel__avisos2 .tarjeta_tipo-hab .tarjeta_tipo-hab__footer .grilla_tipo-hab .grid9 {
+    font-size: 15px;
+  }
+}
 .tarjetas_hotel .tarjetas_hotel__avisos2 .tarjeta_tipo-hab .tarjeta_tipo-hab__footer .grilla_tipo-hab .grid2, .tarjetas_hotel .tarjetas_hotel__avisos2 .tarjeta_tipo-hab .tarjeta_tipo-hab__footer .grilla_tipo-hab .grid4, .tarjetas_hotel .tarjetas_hotel__avisos2 .tarjeta_tipo-hab .tarjeta_tipo-hab__footer .grilla_tipo-hab .grid6, .tarjetas_hotel .tarjetas_hotel__avisos2 .tarjeta_tipo-hab .tarjeta_tipo-hab__footer .grilla_tipo-hab .grid8, .tarjetas_hotel .tarjetas_hotel__avisos2 .tarjeta_tipo-hab .tarjeta_tipo-hab__footer .grilla_tipo-hab .grid10 {
   font-size: 16px;
+}
+@media (max-width: 575px) {
+  .tarjetas_hotel .tarjetas_hotel__avisos2 .tarjeta_tipo-hab .tarjeta_tipo-hab__footer .grilla_tipo-hab .grid2, .tarjetas_hotel .tarjetas_hotel__avisos2 .tarjeta_tipo-hab .tarjeta_tipo-hab__footer .grilla_tipo-hab .grid4, .tarjetas_hotel .tarjetas_hotel__avisos2 .tarjeta_tipo-hab .tarjeta_tipo-hab__footer .grilla_tipo-hab .grid6, .tarjetas_hotel .tarjetas_hotel__avisos2 .tarjeta_tipo-hab .tarjeta_tipo-hab__footer .grilla_tipo-hab .grid8, .tarjetas_hotel .tarjetas_hotel__avisos2 .tarjeta_tipo-hab .tarjeta_tipo-hab__footer .grilla_tipo-hab .grid10 {
+    font-size: 15px;
+  }
 }
 .tarjetas_hotel .tarjetas_hotel__avisos2 .tarjeta_tipo-hab .tarjeta_tipo-hab__footer .tarjeta_tipo-hab-text {
   display: flex;
@@ -1545,7 +1571,7 @@
 @media (max-width: 575px) {
   .exp-cent h1 {
     height: 250px;
-    font-size: 40%;
+    font-size: 30%;
   }
 }
 .exp-cent img {
@@ -1922,7 +1948,7 @@
 @media (max-width: 575px) {
   .tarjetas-conocenos .tarjetas-conocenos__card1 {
     width: 400px;
-    height: 1000px;
+    height: 750px;
   }
 }
 .tarjetas-conocenos .tarjetas-conocenos__card1 .tarjetas-conocenos__card__header {
@@ -1991,7 +2017,7 @@
 }
 @media (max-width: 575px) {
   .tarjetas-conocenos .tarjetas-conocenos__card1 .tarjeta__conocenos__card__footer h3 {
-    font-size: 40%;
+    font-size: 30%;
   }
 }
 .tarjetas-conocenos .tarjetas-conocenos__card1 .tarjeta__conocenos__card__footer p {
@@ -2003,6 +2029,11 @@
 @media (max-width: 575px) {
   .tarjetas-conocenos .tarjetas-conocenos__card1 .tarjeta__conocenos__card__footer p {
     font-size: 25%;
+  }
+}
+@media (max-width: 575px) {
+  .tarjetas-conocenos .tarjetas-conocenos__card1 .tarjeta__conocenos__card__footer p {
+    font-size: 20%;
   }
 }
 .tarjetas-conocenos .tarjetas-conocenos__card2 {
@@ -2031,10 +2062,10 @@
 @media (max-width: 575px) {
   .tarjetas-conocenos .tarjetas-conocenos__card2 {
     width: 400px;
-    height: 1000px;
+    height: 900px;
   }
 }
-.tarjetas-conocenos .tarjetas-conocenos__card2 .tarjeta__conocenos__card__footer {
+.tarjetas-conocenos .tarjetas-conocenos__card2 .tarjeta__conocenos__card__header2 {
   width: 600px;
   display: flex;
   flex-direction: column;
@@ -2044,67 +2075,77 @@
   font-size: 80px;
 }
 @media (max-width: 1200px) {
-  .tarjetas-conocenos .tarjetas-conocenos__card2 .tarjeta__conocenos__card__footer {
+  .tarjetas-conocenos .tarjetas-conocenos__card2 .tarjeta__conocenos__card__header2 {
     width: 500px;
   }
 }
 @media (max-width: 768px) {
-  .tarjetas-conocenos .tarjetas-conocenos__card2 .tarjeta__conocenos__card__footer {
+  .tarjetas-conocenos .tarjetas-conocenos__card2 .tarjeta__conocenos__card__header2 {
     width: 600px;
     height: 500px;
   }
 }
 @media (max-width: 575px) {
-  .tarjetas-conocenos .tarjetas-conocenos__card2 .tarjeta__conocenos__card__footer {
+  .tarjetas-conocenos .tarjetas-conocenos__card2 .tarjeta__conocenos__card__header2 {
     width: 400px;
     height: 600px;
   }
 }
-.tarjetas-conocenos .tarjetas-conocenos__card2 .tarjeta__conocenos__card__footer h3 {
+.tarjetas-conocenos .tarjetas-conocenos__card2 .tarjeta__conocenos__card__header2 h3 {
   font-size: 50%;
   margin: 0;
   text-align: center;
 }
 @media (max-width: 1200px) {
-  .tarjetas-conocenos .tarjetas-conocenos__card2 .tarjeta__conocenos__card__footer h3 {
+  .tarjetas-conocenos .tarjetas-conocenos__card2 .tarjeta__conocenos__card__header2 h3 {
     font-size: 40%;
   }
 }
-.tarjetas-conocenos .tarjetas-conocenos__card2 .tarjeta__conocenos__card__footer p {
+@media (max-width: 575px) {
+  .tarjetas-conocenos .tarjetas-conocenos__card2 .tarjeta__conocenos__card__header2 h3 {
+    font-size: 30%;
+  }
+}
+.tarjetas-conocenos .tarjetas-conocenos__card2 .tarjeta__conocenos__card__header2 p {
   margin: 0;
   font-size: 27%;
   line-height: 29px;
   text-align: center;
 }
 @media (max-width: 1200px) {
-  .tarjetas-conocenos .tarjetas-conocenos__card2 .tarjeta__conocenos__card__footer p {
+  .tarjetas-conocenos .tarjetas-conocenos__card2 .tarjeta__conocenos__card__header2 p {
     font-size: 24%;
   }
 }
-.tarjetas-conocenos .tarjetas-conocenos__card2 .tarjetas-conocenos__card__header {
+@media (max-width: 575px) {
+  .tarjetas-conocenos .tarjetas-conocenos__card2 .tarjeta__conocenos__card__header2 p {
+    font-size: 20%;
+  }
+}
+.tarjetas-conocenos .tarjetas-conocenos__card2 .tarjetas-conocenos__card__footer2 {
   overflow: hidden;
 }
-.tarjetas-conocenos .tarjetas-conocenos__card2 .tarjetas-conocenos__card__header img {
+.tarjetas-conocenos .tarjetas-conocenos__card2 .tarjetas-conocenos__card__footer2 img {
   width: 600px;
   height: 500px;
   transition: transform 0.3s ease;
 }
-.tarjetas-conocenos .tarjetas-conocenos__card2 .tarjetas-conocenos__card__header img:hover {
+.tarjetas-conocenos .tarjetas-conocenos__card2 .tarjetas-conocenos__card__footer2 img:hover {
   transform: scale(1.2);
 }
 @media (max-width: 1200px) {
-  .tarjetas-conocenos .tarjetas-conocenos__card2 .tarjetas-conocenos__card__header img {
+  .tarjetas-conocenos .tarjetas-conocenos__card2 .tarjetas-conocenos__card__footer2 img {
     width: 500px;
   }
 }
 @media (max-width: 768px) {
-  .tarjetas-conocenos .tarjetas-conocenos__card2 .tarjetas-conocenos__card__header img {
+  .tarjetas-conocenos .tarjetas-conocenos__card2 .tarjetas-conocenos__card__footer2 img {
     width: 600px;
     height: auto;
   }
 }
 @media (max-width: 575px) {
-  .tarjetas-conocenos .tarjetas-conocenos__card2 .tarjetas-conocenos__card__header img {
+  .tarjetas-conocenos .tarjetas-conocenos__card2 .tarjetas-conocenos__card__footer2 img {
     width: 400px;
     height: 400px;
   }
