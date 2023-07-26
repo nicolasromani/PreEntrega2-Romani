@@ -1042,20 +1042,6 @@
   }
 }
 
-.menu--modificador {
-  height: 624px;
-}
-@media (max-width: 1024px) {
-  .menu--modificador {
-    height: 450px;
-  }
-}
-@media (max-width: 575px) {
-  .menu--modificador {
-    height: 350px;
-  }
-}
-
 .carousel .carousel-inner .carousel-item .d-block {
   margin-top: 74px;
   height: 676px;
