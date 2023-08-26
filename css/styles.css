@@ -1483,18 +1483,21 @@
   top: 0;
   right: 2%;
   font-size: 1.5rem;
+  padding: 3px 8px;
 }
 #contenedorPrincipal #contenedorSecundario #btn-retroceder {
   position: absolute;
   top: 50%;
   left: 2%;
   font-size: 2rem;
+  padding: 3px 8px;
 }
 #contenedorPrincipal #contenedorSecundario #btn-adelantar {
   position: absolute;
   top: 50%;
   right: 2%;
   font-size: 2rem;
+  padding: 3px 8px;
 }
 
 .registro--modificador {
