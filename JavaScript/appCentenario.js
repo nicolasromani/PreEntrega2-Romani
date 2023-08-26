@@ -18,6 +18,7 @@ let indiceImagen1 = 0;
 let indiceImagen2 = 0;
 let indiceImagen3 = 0;
 
+
 const abrirGaleria1 = document.querySelector('#mostrar-galeria1');
 const abrirGaleria2 = document.querySelector('#mostrar-galeria2');
 const abrirGaleria3 = document.querySelector('#mostrar-galeria3');
@@ -121,3 +122,47 @@ const retrocedeImagen3 = () => {
     imagenActiva.src = imagenesArray3[indiceImagen3].src;
 }
 btnRetrocede.addEventListener('click',retrocedeImagen3);
+
+
+/*
+// Función para abrir una galería
+const abrirGaleria = (imagenesArray, indice) => {
+    return () => {
+        indice = 0;
+        imagenActiva.src = imagenesArray[indice].src;
+        contenedorPrincipal.style.display = 'flex';
+
+        btnAdelanta.addEventListener('click', adelantaImagen(indice, imagenesArray));
+        btnRetrocede.addEventListener('click', retrocedeImagen(indice, imagenesArray));
+    };
+};
+
+// Función para adelantar imagen
+const adelantaImagen = (indice, imagenesArray) => () => {
+    if (indice == imagenesArray.length - 1) {
+        indice = -1;
+    }
+    indice++;
+    imagenActiva.src = imagenesArray[indice].src;
+};
+
+// Función para retroceder imagen
+const retrocedeImagen = (indice, imagenesArray) => () => {
+    if (indice == 0) {
+        indice = imagenesArray.length;
+    }
+    indice--;
+    imagenActiva.src = imagenesArray[indice].src;
+};
+
+const abrirGaleria1 = abrirGaleria(imagenesArray1, indiceImagen1);
+abrirGaleria2 = abrirGaleria(imagenesArray2, indiceImagen2);
+abrirGaleria3 = abrirGaleria(imagenesArray3, indiceImagen3);
+
+// Event listener para cerrar el contenedor
+btnCierra.addEventListener('click', () => {
+    contenedorPrincipal.style.display = 'none';
+    btnAdelanta.removeEventListener('click', adelantaImagen);
+    btnRetrocede.removeEventListener('click', retrocedeImagen);
+});
+*/
