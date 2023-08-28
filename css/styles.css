@@ -1464,8 +1464,8 @@
   background-color: rgba(0, 0, 0, 0.65);
 }
 #contenedorPrincipal #contenedorSecundario {
-  width: auto;
-  height: auto;
+  width: 1000px;
+  height: 700px;
   border: 2px #f3f3f3 solid;
   padding: 2px;
   display: flex;
@@ -1477,6 +1477,10 @@
   color: #f3f3f3;
   background-color: transparent;
   border: none;
+}
+#contenedorPrincipal #contenedorSecundario #imagen-activa {
+  width: 100%;
+  height: 100%;
 }
 #contenedorPrincipal #contenedorSecundario #btn-cierra {
   position: absolute;
